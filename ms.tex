@@ -77,7 +77,7 @@ A number of teams have created deep Stripe 82 stacks and made them available to 
 
 \subsection{Structure of SDSS Stripe 82 files}
 
-	We use description from J14 to present the structure of optical data. An SDSS run (strip) consists of six parallel scanlines, identified by camera columns (Figure~\ref{fig:sdss}). The scanlines are 13.5 arcmin wide, with gaps of roughly the same width, so two interleaving strips make a stripe that consists of total 12 scanlines (columns). Their names in the direction of increasing declination are:
+We use description from J14 to present the structure of optical data. An SDSS run (strip) consists of six parallel scanlines, identified by camera columns (Figure~\ref{fig:sdss}). The scanlines are 13.5 arcmin wide, with gaps of roughly the same width, so two interleaving strips make a stripe that consists of total 12 scanlines (columns). Their names in the direction of increasing declination are:
 $col01 \rightarrow col07 \rightarrow col02 \rightarrow col08 \rightarrow col03 \rightarrow col09 \rightarrow col04 \rightarrow col10 \rightarrow col05 \rightarrow col11 \rightarrow col06 \rightarrow col12$.
 
 %\begin{figure}[!ht]
@@ -142,7 +142,7 @@ TPHOT requires that the low- and the high-resolution images have the integer mul
 
 The change to the SDSS images was done by using the SWarp software \citep[][]{Bertin2002}. The reference pixel (CRPIX1 and CRPIX2) for the SDSS images can now be outside of the image itself to as far as 0.7 deg.
 
-$\approx15\%$ of the SDSS images lay at the interface between two adjacent WISE images. Such SDSS images were duplicated and each copy was assigned with different reference pixels, thus increasing the number of SDSS images from  4812 to 5556 per band.
+$\approx15\%$ of the SDSS images lay at the interface between two adjacent WISE images. Such SDSS images were duplicated and each copy was assigned with different reference pixels, thus increasing the number of SDSS images from 4,812 to 5,556 per band.
 
 The WISE images were rescaled from 2.75 ''/pix to 2.772 ''/pix using SWarp. The pixel scale ratio of WISE images and SDSS images is thus an integer: $2.772/0.396 = 7$.
 
@@ -152,77 +152,72 @@ Center pixels of saturated sources in the WISE standard deviation images have ze
 
 % * construction of the PSF and kernels
 \subsection{Input SDSS source catalog} 
+**Reasoning**
+
+J14 produced object catalogs from their stacked images using $\tt SExtractor$ \citep[][]{Bertin1996}. While in general these catalogs could be used in our project, there are several caveats. The catalogs are not cleaned out from the duplicate sources in the overlap area between two adjacent images and two adjacent scanlines; catalogs are not matched between the bands and thus have different number of sources for each band; object detection threshold was set too high (DETECT$\_$THRESH = 2) and many faint objects were excluded; bright and saturated objects have multiple detections, none of which is centered on the source. For these reasons new catalogs will be constructed.
+
 **Problem**
 
 Due to the great depth, roughly 24.6 AB and $\approx1''$ PSF FWHM r-band was chosen as a reference band. Centroids, morphology, and other non-amplitude parameters of the detected sources are then fixed to the values from this reference band. Sensitivity, FWHM and local background varies in SDSS from band to band, so neither aperture, nor Kron flexible elliptical aperture \citep{Kron1980} can produce consistent colors in 5 optical bands, which is crucial for the subsequent SED fitting.
 
 **General solution**
 
-To remedy this problem, all individual images in $g'r'i'z'$ bands are convolved to the PSF of the corresponding image in the band with the worst PSF FWHM, namely u-band. For the price of losing some sources due to blending in the reference band, matched to the u-band, we extract more robust fluxes.
-Matching one images in one band to the PSF of the image in the different band requires knowledge of the corresponding kernel - a PSF matching function between two images. 
-*Here I write about the variation of the PSF in one band in Stripe82 due to the geometrical distortions and different seeing which leads to the task of constructing of the PSF for each individual image*
-Construction of the 27,780 PSFs in Stripe 82 (5,556 per band) is the most time-consuming part of the project.
+To remedy this problem, all individual images in $g'r'i'z'$ bands are convolved to the PSF of the corresponding image in the band with the worst PSF FWHM, namely u-band. For the price of losing some sources due to blending in the reference band, matched to the u-band, we extract more robust fluxes. Matching one images in one band to the PSF of the image in the different band requires knowledge of the kernel - a PSF matching function between two images. The PSF of SDSS images varies in RA (corresponds to image rows), due to atmospheric fluctuations and, as a result, different seeing. It also varied in DEC (corresponds to columns), due to camera optics and different airmass. Thus there is no universal PSF and individual PSF must be built for each SDSS image. Construction of the 27,780 PSFs in Stripe 82 (5,556 per band) is the most time-consuming part of the project.
 
 **PSF construction**
 
 Our strategy for the PSF construction can be described as follows. PSF is built as a combination of selected point-like sources on the image. Generally, large amount of such sources is needed to build a correct PSF that is independent of small variations in profiles of the sources \textit{I know it should be said, but I am not sure this is the best way.} The first selection of point sources that contribute to the PSF model is performed using a comparison of the core magnitude vs. total magnitude. The ratio between these two quantities represents a concentration of the source. SExtractor MAG$\_$APER and MAG$\_$BEST were used to quantify core and total magnitudes respectively. Size of the aperture depends on the particular band, but in general is $\approx$ X$''$.
 The second selection involved magnitude cuts (saturated and faint sources were removed) and use of the stellarity index. The later was estimated using SExtractor CLASS$\_$STAR parameter. Sources with CLASS$\_$STAR$<$XX were rejected. The last selection only left the source in the final sample if it is not close to the edge of the image and does not have another nearby source within XX$''$. 
 
-Finally, each SDSS image has 20 to 160 point-like sources that contribute to the PSF model. Lower value appears in a few images when there are not enough bright point sources (mostly in the less sensitive u-band), while the cut in the maximum number of the point sources was performed in order to have stable performance of the {\tt IRAF/psf} task. \textit{I know it sounds ugly, but I don't want to write the IRAF sometimes  crashes when you supply more than 160 stars.} Visual inspection is given to all constructed PSFs. If it shows some features, such as elongation, gradient of the background due to the nearby (within up to several arcmin) source, or faint non-detected blended source in the vicinity of the main profile, then manual selection of the point sources and reconstruction of the PSF is performed. {\tt IRAF/seepsf} is used to take the PSF, computed by the {\tt IRAF/psf} and build a 21x21 pixel output FITS image, consisting of the sum of the analytic function and the residual. All PSF images are subsequently normalized to the unity total counts using {\tt wcstools/sumpix} \citep{Mink1998b} and {\tt IRAF/imarith} tasks. Kernels are constructed using {\tt IRAF/lucy} task that uses algorithm developed by \citet{Lucy1974} and \citet{Richardson1972}.
-%SDSS bands have different sensitivity and FWHM, each field has different number of sources in different bands. R-band has a combination of a great depth, roughly 24.6 AB and $\approx1''$ PSF FWHM and was chosen as a detection band for the catalog.
-%We shall choose the band that we use for detection, i.e., the source is added to our catalog if only it is detected in this band with sufficient SNR. Also position of the source in this band is used as the true position in all other bands. 
-%Another issue is the flux measurement - reliable SED fitting requires consistent multiwavelength photometry while different photometric conditions and FWHM could result in not measuring the same fraction of the total flux and, as a result, non-consistent colors even in optical filters alone. 
-%Thus the measurement that are made even with flexible elliptical apertures known as the Kron apertures [Kron, 1980] that are denoted in SExtractor as FLUX AUTO [Bertin and Arnouts, 1996] will from the given source in different filters.
+Finally, each SDSS image has 20 to 160 point-like sources that contribute to the PSF model. Lower value appears in a few images when there are not enough bright point sources (mostly in the less sensitive u-band), while the cut in the maximum number of the point sources was performed in order to have stable performance of the {\tt IRAF/psf} task. \textit{I know it sounds ugly, but I don't want to write the IRAF sometimes  crashes when you supply more than 160 stars.} Visual inspection is given to all constructed PSFs. If it shows some features, such as elongation, gradient of the background due to the nearby (within up to several arcmin) source, or faint non-detected blended source in the vicinity of the main profile, then manual selection of the point sources and reconstruction of the PSF is performed. {\tt IRAF/seepsf} is used to take the PSF, computed by the {\tt IRAF/psf} and build a 21x21 pixel output FITS image, consisting of the sum of the analytic function and the residual. All PSF images are subsequently normalized to the unity total counts using {\tt wcstools/sumpix} \citep{Mink1998b} and {\tt IRAF/imarith} tasks. 
+
+**kernel construction and psf matching**
+
+Kernels are constructed by supplying two PSF to the {\tt IRAF/lucy} task that uses algorithm developed by \citet{Richardson1972} and \citet{Lucy1974}. Matching to the PSF of the u-band is performed by {\tt IRAF/psfmatch} task that uses $g'r'i'z'$ image and a relevant kernel as an input.
+
+**catalog construction**
+
+Catalogs are produced running {\tt SExtractor} in the dual mode, where r-band matched to u-band ("r matched to u" for short) is used for detection and all five bands (u-band, g matched to u, r matched to u, i matched to u, z matched to u) are consequently used for photometry. Catalogs in each image are then matched by their ID.
+
+**magnitude error correction**
+
+Convolving the image with the PSF is often used for better detection of faint objects as it increases SNR of objects \textit{I saw it in some paper, just need to find it}. As a result, spurious detections have SNR $>$ 5 and real objects have non-realistic associated magnitude errors, which affect the choice of proper templates for SED fitting. We mitigate such problem by correcting magnitude errors for bands $g'r'i'z'$. For each image {\tt SExtractor} was ran again in the dual mode with r matched to u as a detection and original $g'r'i'z'$ SDSS images for photometry. Two catalogs for each image (original image and matched to u-band) are stacked and the mean ratio of the original SNR to matched SNR for all sources is calculated. All magnitude errors in a matched image are then multiplied by this ratio. \textit{I may insert a figure that shows this correction}. Besides statistical errors there are systematic error that are accounted by adding in quadrature a value of 0.04 magnitudes. Each source in each band is thus assigned with the error magnitude that was calculated using the following equation:
+$$ magerr\_corrected = \sqrt{0.04^{2}+(\dfrac{1.0857}{SNR}\cdot K)^{2}} $$ SNR is FLUX$\_$ISO $ \//$ FLUXERR$\_$ISO and K is correction coefficient. SNR $>$ 5 cut was applied and the catalog at this stage consists of 26,585,000 sources. 
+
 %For that reason $g' r' i' z'$ bands were convolved to the PSF of the one with the worst FWHM, i.e., u-band. In such a case the size variation in different bands will be attributed to the intrinsic difference in morphology at different wavelength. For the price of loosing some sources due to blending, more robust optical colors will be extracted. Matching is performed with $\tt IRAF/psfmatch$ task that requires supplying the image with the corresponding kernel - PSF matching function. Building a kernel requires  knowledge of the PSFs of the input image and a matched image. Construction of 27, 780 PSFs in Stripe 82 (5, 556 per band) is the most time-consuming part of the project.
 %One of the widely-used ways to construct PSF is by using PSFEx software [Bertin, 2011]. We tested it with TPHOT and found that the quality of residual images is not satisfactory, so we decided to use more conservative algorithm in which IRAF/psf task creates a PSF function based on a set of selected point-like sources (so called PSF stars). Usually that strategy involves consecutive run of IRAF/find, IRAF/phot, IRAF/pstselect and IRAF/psf tasks that find stars, determine its magnitude, select the ones that do not have any morphological features and finally construct a PSF function. This algorithm, though very reliable, is also not ideal - in each image there are $\approx 10\%$ of sources that do not satisfy the criteria of PSF stars (are elongated, blended or have noisy background) and have to be rejected in the manual regime (selection in interactive mode). This is extremely time-consuming and inefficient given the total number of images in 5 bands. We decide to use a variation of this method to create PSF functions in a more automatic fashion.
 
 %We run SExtractor on each SDSS image and only mark sources from the output catalog as a point-like, if their ”stellarity” index (determined by a CLASS STAR parameter) is close to 1, sources are bright, but not saturated, they do not lay within 2$\cdot$ PSF radius to the edge of the FITS image, and have all their flux contained within some small aperture. The later was calculated as the difference ”MAG diff” between MAG APER that returns all flux within some fixed aperture and MAG BEST that returns MAG AUTO value in the absence of contamination from the nearby sources and MAG ISOCOR otherwise. Exact parameters depend on the band and also were adjusted during test runs so that each SDSS image has no less than 20 PSF stars (stars were sorted by their magnitude, from bright to dim), with the maximum number of PSF stars limited to 160 (larger values significantly slow down IRAF).
+
 \textit{I rewrote till this phrase}
 
-**matching all 5 bands to the PSF of the u-band**
+%**matching all 5 bands to the PSF of the u-band**
 
 %When all PSF stars are selected PSF was constructed using standard IRAF/psf. Then we run IRAF/seepsf, a task that takes the input PSF computed by the IRAF/psf task, consisting of the parameters of a 2D analytic function stored in the image header, and computes 21x21 pixel output PSF FITS image consisting of the sum of the analytic function and the residuals. Visual inspection of all PSF images revealed a certain fraction of defect PSFs. The reason for it can be either a blended source within the PSF radius, high background values due to the nearby bright star (within up to several arcmin), or noticeable elongation of the source (may be due to inclusion of a galaxy in our sample or due to intrinsic problems with SDSS image). The fraction of such images varied in different bands but generally was $\approx 4\%$ and for such images we re-run IRAF/psf in interactive mode (manually selecting PSF stars from a pre-selected catalog). All PSF images were normalized to unity total counts using wcstools/sumpix [Mink, 1998] and IRAF/imarith tasks. Several PSFs for all 5 bands and 6 different columns centered at RA=21:56:46 are shown in Figure 3.2. We used IRAF/lucy, a task that uses algorithm developed independently by Lucy [Lucy, 1974] and Richardson [Richardson, 1972], to create kernels for pairs of images in x- and u-bands, where ”x-” stands for g-, r-, i-, or z-band
  
 %With kernels in hand it is now possible to run IRAF/psfmatch that convolves input image with the kernel to produce a psf matched output image (Figure 3.3). From when u-band, g-band, r-band etc images mean "SDSS Stripe 82 images stacked by J14 with new CRVAL and new CRPIX values", while g matched u, etc. means images in the g-band matched to the PSF of the u-band image. 
  
- *	catalog construction with SExtractor in dual mode, using r\_matched\_u band for detection
+% *	catalog construction with SExtractor in dual mode, using r\_matched\_u band for detection
 	%SDSS co-adds from J14 already have associated catalogs on the whole Stripe 82 region. We decide not to use it and create our own for several reasons:\\
-	-	J14 catalogs are not matched between the bands, resulting in different number of objects in different bands.\\
-	-	SNR at which the source is rejected is too high and there are a lot of sources that are identified in several bands when we perform our own photometry that were not included in J14 catalog.\\
-	-	Bright and saturated objects are detected as multiple sources, none of which is at the center of such object making correct SED fitting impossible. \\
-	On Figure~\ref{fig:catalog_comp} we show a comparison of the original catalog from J14 (sources within green regions) and our catalog (sources within red regions). In the next 2 subsections we show the strategy for catalog construction with consistent optical colors in all 5 SDSS bands.
+%	-	J14 catalogs are not matched between the bands, resulting in different number of objects in different bands.\\
+%	-	SNR at which the source is rejected is too high and there are a lot of sources that are identified in several bands when we perform our own photometry that were not included in J14 catalog.\\
+%	-	Bright and saturated objects are detected as multiple sources, none of which is at the center of such object making correct SED fitting impossible. \\
+%	On Figure~\ref{fig:catalog_comp} we show a comparison of the original catalog from J14 (sources within green regions) and our catalog (sources within red regions). In the next 2 subsections we show the strategy for catalog construction with consistent optical colors in all 5 SDSS bands.
 
-To construct a consistent optical catalog we run SExtractor in the dual mode - the first image is used for detection and astrometry information, while the second is used solely for photometry. We take r mathced u image as detection image and supply consequently all 5 bands to extract photometry of the sources and reject sources with SNR < 5 based on the r matched u flux. R matched u catalogs as well as corresponding segmentation maps also serve as an input to the TPHOT to derive consistent photometry on near-IR bands. Our parent catalog now consists of 26,585,000 sources. We notice that very few sources were
-rejected at this stage - objects that appear almost undetectable had FLUX AUTO / FLUXERR AUTO larger than 5 or even 7. 
+%To construct a consistent optical catalog we run SExtractor in the dual mode - the first image is used for detection and astrometry information, while the second is used solely for photometry. We take r mathced u image as detection image and supply consequently all 5 bands to extract photometry of the sources and reject sources with SNR < 5 based on the r matched u flux. R matched u catalogs as well as corresponding segmentation maps also serve as an input to the TPHOT to derive consistent photometry on near-IR bands. Our parent catalog now consists of 26,585,000 sources. We notice that very few sources were rejected at this stage - objects that appear almost undetectable had FLUX AUTO / FLUXERR AUTO larger than 5 or even 7. 
 
- *	correction of the error magnitudes in g ,r ,i  and z matched u bands
+% *	correction of the error magnitudes in g ,r ,i  and z matched u bands
 
-Photometry comparison between original x-band and x matched u-band catalogs
-shows a systematic underestimation of the errors associated with the source's flux
-(Figure 3.4). We believe that the reason for this was that we supplied to SExtractor science images matched to the u-band while the weight images were not matched to the u-band. This was the reason for high SNR ratios and low rejection rate for the faint sources.
-To correct for that we use STILTS code [Taylor, 2006] to match x-band
-and x matched u catalogs in 5 bands and for each separate image we calculate the
-mean ratio of the flux error before and after PSF matching. All magnitude errors in a given
-image are then multiplied by this coefficient. Figure 3.5 shows coefficients for all 5556 images for 4 bands matched to the u-band. We did not apply IRAF/psfmatch task to the u-band, but still calculated that correcting coefficient because r matched u FITS file was used as detection image in SExtractor. All coefficients for this band are less than 1. (CHECK THIS!)
-\\
-We anticipate that while corrected values account for statistical error, there should
-also be a systematic error in magnitude that needs to be taken care of. We performed
-a series of tests where different constant errors were added in quadrature to the
-reported magnitude error and then the goodness of fit on the graph z spec vs z phot
-was checked. We found that correlation is the tightest when 0.04 magnitude error
-is added in quadrature (so final error cannot be smaller than 0.04). Each
-source in each band was assigned by a error in magnitude that was calculated using the following equation:
+%Photometry comparison between original x-band and x matched u-band catalogs shows a systematic underestimation of the errors associated with the source's flux (Figure 3.4). We believe that the reason for this was that we supplied to SExtractor science images matched to the u-band while the weight images were not matched to the u-band. This was the reason for high SNR ratios and low rejection rate for the faint sources. To correct for that we use STILTS code [Taylor, 2006] to match x-band and x matched u catalogs in 5 bands and for each separate image we calculate the mean ratio of the flux error before and after PSF matching. All magnitude errors in a given image are then multiplied by this coefficient. Figure 3.5 shows coefficients for all 5556 images for 4 bands matched to the u-band. We did not apply IRAF/psfmatch task to the u-band, but still calculated that correcting coefficient because r matched u FITS file was used as detection image in SExtractor. All coefficients for this band are less than 1. (CHECK THIS!)
 
-$$ magerr\_corrected = \sqrt{0.04^{2}+(\dfrac{1.0857}{SNR}\cdot correction\_coefficient)^{2}}$$
-\\
-** masking area around bright stars\\
-** removing double objects\\
-** star-galaxy separation
+%We anticipate that while corrected values account for statistical error, there should also be a systematic error in magnitude that needs to be taken care of. We performed a series of tests where different constant errors were added in quadrature to the reported magnitude error and then the goodness of fit on the graph z spec vs z phot was checked. We found that correlation is the tightest when 0.04 magnitude error is added in quadrature (so final error cannot be smaller than 0.04). Each source in each band was assigned by a error in magnitude that was calculated using the following equation:
+
+%$$ magerr\_corrected = \sqrt{0.04^{2}+(\dfrac{1.0857}{SNR}\cdot correction\_coefficient)^{2}}$$
 
 \subsection{preparatory work with input files to TPHOT} 
-	* SWarping of unWISE files
+%	* SWarping of unWISE files
 	
-We use SWarp to change the pixel scale of all unWISE images from original 2.75 to 2.772 to match the integer pixel scale ratio with SDSS images = 7. Now we construct unWISE PSF functions that is to be convolved with SDSS PSF to produce kernels - one of the most important set of the input files to TPHOT.	
+%We use SWarp to change the pixel scale of all unWISE images from original 2.75 to 2.772 to match the integer pixel scale ratio with SDSS images = 7. Now we construct unWISE PSF functions that is to be convolved with SDSS PSF to produce kernels - one of the most important set of the input files to TPHOT.	
 *PSF construction
 
 WISE Atlas Images are constructed by coadding many single-exposure images (IV.4.f). Because the number and relative orientation of single-exposures differ significantly between Atlas Tiles, and because the single-exposure PSFs vary with focal plane location (IV.4.c.iii), the PSF will be different for every Atlas Image and will vary with position on any given Atlas Image. ($http://wise2.ipac.caltech.edu/docs/release/allsky/expsup/sec4_4c.html$)
@@ -265,6 +260,7 @@ of the z 0 filter and the Lyman break is not yet detectable in the
 u - band. (from 1809.03373.pdf)
 
 \subsection{TPHOT} 
+	used r matched u catalog and corresponding segmentation maps
 	parameters, limitations, computation on the cluster 
 
 \subsection{Final catalog with photometric redshifts} 
@@ -274,8 +270,10 @@ u - band. (from 1809.03373.pdf)
 \subsection{EAZY} 
 	redshift determination, matching to the spectroscopic redshifts
 	comparison of the redshift with and without unWISE data (similar results)
-	star-galaxy separation
-	final cleaning of the catalog – removing of bright stars and duplicated sources
+** masking area around bright stars\\
+** star-galaxy separation
+** removing duplicate objects**
+
 	
 \section{Results}
 
