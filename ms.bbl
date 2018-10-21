@@ -1,11 +1,7 @@
-\begin{thebibliography}{15}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
-\bibitem[Adelman-McCarthy et~al.(2007)Adelman-McCarthy, M.A., S.S., K.S.J.,
+\bibitem[{Adelman-McCarthy {et~al.}(2007)Adelman-McCarthy, M.A., S.S., K.S.J.,
   S.F., J., N.A., C.A.L., I.K., J.C., T.C., V., A., M., M.R., J.J., W.N., D.M.,
   H.J., J., J., R.J., T., L.N., S., M.A., F.J., A.J., R.J., C.E., I., J.J., M.,
   D.J., M.L., N.W., X., D.P., S.D., J.A., M., B., G., K., J., E.K., J.E., E.,
@@ -16,183 +12,79 @@
   D., T.R., M.J., P., G.T., M.W., H.-W., C.M., D.J., D.P., R., U., E., K.,
   N.M., J.A., V., S.A., A., C., M.A., M., Y., A.S., I., P., M., A.R., C.A.,
   D.L., A., D.E., J., S., M.S., W., N.P., D.H., A.A., S.D.M., B., B., D.R.,
-  D.G., I., S., and D.B.]{Adelman-McCarthy2007}
-J.K. Adelman-McCarthy, AGUEROS M.A., ALLAM S.S., ANDERSON K.S.J., ANDERSON
-  S.F., ANNIS J., BAHCALL N.A., BAILER-JONES C.A.L., BALDRY I.K., BARENTINE
-  J.C., BEERS T.C., BELOKUROV V., BERLIND A., BERNARDI M., BLANTON M.R.,
-  BOCHANSKI J.J., BOROSKI W.N., BRAMICH D.M., BREWINGTON H.J., BRINCHMANN J.,
-  BRINKMANN J., BRUNNER R.J., BUDAVARI T., CAREY L.N., CARLILES S., CARR M.A.,
-  CASTANDER F.J., CONNOLLY A.J., COOL R.J., CUNHA C.E., CSABAI I., DALCANTON
-  J.J., DOI M., EISENSTEIN D.J., EVANS M.L., EVANS N.W., FAN X., FINKBEINER
-  D.P., FRIEDMAN S.D., FRIEMAN J.A., FUKUGITA M., GILLESPIE B., GILMORE G.,
-  GLAZEBROOK K., GRAY J., GREBEL E.K., GUNN J.E., DE~HAAS E., HALL P.B.,
-  HARVANEK M., HAWLEY S.L., HAYES J., HECKMAN T.M., HENDRY J.S., HENNESSY G.S.,
-  HINDSLEY R.B., HIRATA C.M., HOGAN C.J., HOGG D.W., HOLTZMAN J.A., ICHIKAWA
-  S.-I., ICHIKAWA T., IVEZIC Z., JESTER S., JOHNSTON D.E., JORGENSEN A.M.,
-  JURIC M., KAUFFMANN G., KENT S.M., KLEINMAN S.J., KNAPP G.R., KNIAZEV A.Y.,
-  KRON R.G., KRZESINSKI J., KUROPATKIN N., LAMB D.Q., LAMPEITL H., LEE B.C.,
-  LEGER R.F., LIMA M., LIN H., LONG D.C., LOVEDAY J., LUPTON R.H., MANDELBAUM
-  R., MARGON B., MARTINEZ-DELGADO D., MATSUBARA T., McGEHEE P.M., McKAY T.A.,
-  MEIKSIN A., MUNN J.A., NAKAJIMA R., NASH T., NEILSEN E.H.Jr, NEWBERG H.J.,
-  NICHOL R.C., NIETO-SANTISTEBAN M., NITTA A., OYAIZU H., OKAMURA S., OSTRIKER
-  J.P., PADMANABHAN N., PARK C., PEOPLES J.Jr, PIER J.R., POPE A.C., POURBAIX
-  D., QUINN T.R., RADDICK M.J., RE~FIORENTIN P., RICHARDS G.T., RICHMOND M.W.,
-  RIX H.-W., ROCKOSI C.M., SCHLEGEL D.J., SCHNEIDER D.P., SCRANTON R., SELJAK
-  U., SHELDON E., SHIMASAKU K., SILVESTRI N.M., SMITH J.A., SMOLCIC V., SNEDDEN
-  S.A., STEBBINS A., STOUGHTON C., STRAUSS M.A., SUBBARAO M., SUTO Y., SZALAY
-  A.S., SZAPUDI I., SZKODY P., TEGMARK M., THAKAR A.R., TREMONTI C.A., TUCKER
-  D.L., UOMOTO A., VANDEN~BERK D.E., VANDENBERG J., VIDRIH S., VOGELEY M.S.,
-  VOGES W., VOGT N.P., WEINBERG D.H., WEST A.A., WHITE S.D.M., WILHITE B.,
-  YANNY B., YOCUM D.R., YORK D.G., ZEHAVI I., ZIBETTI S., and ZUCKER D.B.
-\newblock Vizier online data catalog: The sdss photometric catalog, release 5
-  (adelman-mccarthy+, 2007).
-\newblock \emph{VizieR Online Data Catalog}, 2276, March 2007.
-\newblock URL \url{http://adsabs.harvard.edu/abs/2007yCat.2276....0A}.
+  D.G., I., S., \& D.B.}]{Adelman-McCarthy2007}
+Adelman-McCarthy, J., M.A., A., S.S., A., {et~al.} 2007, VizieR Online Data
+  Catalog, 2276
 
-\bibitem[Annis et~al.(2014)Annis, Soares-Santos, Strauss, Becker, Dodelson,
+\bibitem[{Annis {et~al.}(2014)Annis, Soares-Santos, Strauss, Becker, Dodelson,
   Fan, Gunn, Hao, Ivezi{\'c}, Jester, Jiang, Johnston, Kubo, Lampeitl, Lin,
-  Lupton, Miknaitis, Seo, Simet, and Yanny]{Annis2014}
-J.~Annis, M.~Soares-Santos, M.~A. Strauss, A.~C. Becker, S.~Dodelson, X.~Fan,
-  J.~E. Gunn, J.~Hao, {\v Z}.~Ivezi{\'c}, S.~Jester, L.~Jiang, D.~E. Johnston,
-  J.~M. Kubo, H.~Lampeitl, H.~Lin, R.~H. Lupton, G.~Miknaitis, H.-J. Seo,
-  M.~Simet, and B.~Yanny.
-\newblock The sloan digital sky survey coadd: 275 deg$^{2}$ of deep sloan
-  digital sky survey imaging on stripe 82.
-\newblock \emph{\apj}, 794:\penalty0 120, October 2014.
-\newblock \doi{10.1088/0004-637X/794/2/120}.
-\newblock URL \url{http://adsabs.harvard.edu/abs/2014ApJ...794..120A}.
+  Lupton, Miknaitis, Seo, Simet, \& Yanny}]{Annis2014}
+Annis, J., Soares-Santos, M., Strauss, M.~A., {et~al.} 2014, \apj, 794, 120
 
-\bibitem[Bertin and Arnouts(1996)]{Bertin1996}
-E.~Bertin and S.~Arnouts.
-\newblock Sextractor: Software for source extraction.
-\newblock \emph{\aaps}, 117:\penalty0 393--404, June 1996.
-\newblock \doi{10.1051/aas:1996164}.
+\bibitem[{Bertin \& Arnouts(1996)}]{Bertin1996}
+Bertin, E., \& Arnouts, S. 1996, \aaps, 117, 393
 
-\bibitem[Bertin et~al.(2002)Bertin, Mellier, Radovich, Missonnier, Didelon, and
-  Morin]{Bertin2002}
-E.~Bertin, Y.~Mellier, M.~Radovich, G.~Missonnier, P.~Didelon, and B.~Morin.
-\newblock The terapix pipeline.
-\newblock In D.~A. {Bohlender}, D.~{Durand}, and T.~H. {Handley}, editors,
-  \emph{Astronomical Data Analysis Software and Systems XI}, volume 281 of
-  \emph{Astronomical Society of the Pacific Conference Series}, page 228, 2002.
-\newblock URL \url{http://adsabs.harvard.edu/abs/2002ASPC..281..228B}.
+\bibitem[{Bertin {et~al.}(2002)Bertin, Mellier, Radovich, Missonnier, Didelon,
+  \& Morin}]{Bertin2002}
+Bertin, E., Mellier, Y., Radovich, M., {et~al.} 2002, in Astronomical Society
+  of the Pacific Conference Series, Vol. 281, Astronomical Data Analysis
+  Software and Systems XI, ed. D.~A. {Bohlender}, D.~{Durand}, \& T.~H.
+  {Handley}, 228
 
-\bibitem[Cutri et~al.(2013)Cutri, Wright, Conrow, Fowler, Eisenhardt,
+\bibitem[{Cutri {et~al.}(2013)Cutri, Wright, Conrow, Fowler, Eisenhardt,
   Grillmair, Kirkpatrick, Masci, McCallon, Wheelock, Fajardo-Acosta, Yan,
   Benford, Harbut, Jarrett, Lake, Leisawitz, Ressler, Stanford, Tsai, Liu,
   Helou, Mainzer, Gettings, Gonzalez, Hoffman, Marsh, Padgett, Skrutskie, Beck,
-  Papin, and Wittman]{2013wise.rept....1C}
-R.~M. Cutri, E.~L. Wright, T.~Conrow, J.~W. Fowler, P.~R.~M. Eisenhardt,
-  C.~Grillmair, J.~D. Kirkpatrick, F.~Masci, H.~L. McCallon, S.~L. Wheelock,
-  S.~Fajardo-Acosta, L.~Yan, D.~Benford, M.~Harbut, T.~Jarrett, S.~Lake,
-  D.~Leisawitz, M.~E. Ressler, S.~A. Stanford, C.~W. Tsai, F.~Liu, G.~Helou,
-  A.~Mainzer, D.~Gettings, A.~Gonzalez, D.~Hoffman, K.~A. Marsh, D.~Padgett,
-  M.~F. Skrutskie, R.~P. Beck, M.~Papin, and M.~Wittman.
-\newblock Explanatory supplement to the allwise data release products.
-\newblock Technical report, November 2013.
-\newblock URL \url{http://adsabs.harvard.edu/abs/2013wise.rept....1C}.
+  Papin, \& Wittman}]{2013wise.rept....1C}
+Cutri, R.~M., Wright, E.~L., Conrow, T., {et~al.} 2013, Explanatory Supplement
+  to the AllWISE Data Release Products, Tech. rep.
 
-\bibitem[Huff et~al.(2014)Huff, Hirata, Mandelbaum, Schlegel, Seljak, and
-  Lupton]{2014MNRAS.440.1296H}
-E.~M. Huff, C.~M. Hirata, R.~Mandelbaum, D.~Schlegel, U.~Seljak, and R.~H.
-  Lupton.
-\newblock Seeing in the dark - i. multi-epoch alchemy.
-\newblock \emph{\mnras}, 440:\penalty0 1296--1321, May 2014.
-\newblock \doi{10.1093/mnras/stu144}.
-\newblock URL \url{http://adsabs.harvard.edu/abs/2014MNRAS.440.1296H}.
+\bibitem[{Huff {et~al.}(2014)Huff, Hirata, Mandelbaum, Schlegel, Seljak, \&
+  Lupton}]{2014MNRAS.440.1296H}
+Huff, E.~M., Hirata, C.~M., Mandelbaum, R., {et~al.} 2014, \mnras, 440, 1296
 
-\bibitem[Jiang et~al.(2009)Jiang, Fan, Bian, Annis, Chiu, Jester, Lin, Lupton,
-  Richards, Strauss, Malanushenko, Malanushenko, and
-  Schneider]{2009AJ....138..305J}
-L.~Jiang, X.~Fan, F.~Bian, J.~Annis, K.~Chiu, S.~Jester, H.~Lin, R.~H. Lupton,
-  G.~T. Richards, M.~A. Strauss, V.~Malanushenko, E.~Malanushenko, and D.~P.
-  Schneider.
-\newblock A survey of z \~{} 6 quasars in the sloan digital sky survey deep
-  stripe. ii.
-\newblock \emph{\aj}, 138:\penalty0 305--311, July 2009.
-\newblock \doi{10.1088/0004-6256/138/1/305}.
-\newblock URL \url{http://adsabs.harvard.edu/abs/2009AJ....138..305J}.
+\bibitem[{Jiang {et~al.}(2009)Jiang, Fan, Bian, Annis, Chiu, Jester, Lin,
+  Lupton, Richards, Strauss, Malanushenko, Malanushenko, \&
+  Schneider}]{2009AJ....138..305J}
+Jiang, L., Fan, X., Bian, F., {et~al.} 2009, \aj, 138, 305
 
-\bibitem[Jiang et~al.(2014)Jiang, Fan, Bian, McGreer, Strauss, Annis, Buck,
-  Green, Hodge, Myers, Rafiee, and Richards]{Jiang2014}
-L.~Jiang, X.~Fan, F.~Bian, I.~D. McGreer, M.~A. Strauss, J.~Annis, Z.~Buck,
-  R.~Green, J.~A. Hodge, A.~D. Myers, A.~Rafiee, and G.~Richards.
-\newblock The sloan digital sky survey stripe 82 imaging data: Depth-optimized
-  co-adds over 300 deg$^{2}$ in five filters.
-\newblock \emph{\apjs}, 213:\penalty0 12, July 2014.
-\newblock \doi{10.1088/0067-0049/213/1/12}.
-\newblock URL \url{http://adsabs.harvard.edu/abs/2014ApJS..213...12J}.
+\bibitem[{Jiang {et~al.}(2014)Jiang, Fan, Bian, McGreer, Strauss, Annis, Buck,
+  Green, Hodge, Myers, Rafiee, \& Richards}]{Jiang2014}
+---. 2014, \apjs, 213, 12
 
-\bibitem[Kron(1980)]{Kron1980}
-R.~G. Kron.
-\newblock Photometry of a complete sample of faint galaxies.
-\newblock \emph{\apjs}, 43:\penalty0 305--325, June 1980.
-\newblock \doi{10.1086/190669}.
-\newblock URL \url{http://adsabs.harvard.edu/abs/1980ApJS...43..305K}.
+\bibitem[{Kron(1980)}]{Kron1980}
+Kron, R.~G. 1980, \apjs, 43, 305
 
-\bibitem[Lang(2014)]{Lang2014e}
-D.~Lang.
-\newblock unwise: Unblurred coadds of the wise imaging.
-\newblock \emph{\aj}, 147:\penalty0 108, May 2014.
-\newblock \doi{10.1088/0004-6256/147/5/108}.
-\newblock URL \url{http://adsabs.harvard.edu/abs/2014AJ....147..108L}.
+\bibitem[{Lang(2014)}]{Lang2014e}
+Lang, D. 2014, \aj, 147, 108
 
-\bibitem[Lucy(1974)]{Lucy1974}
-L.~B. Lucy.
-\newblock An iterative technique for the rectification of observed
-  distributions.
-\newblock \emph{\aj}, 79:\penalty0 745, June 1974.
-\newblock \doi{10.1086/111605}.
-\newblock URL \url{http://adsabs.harvard.edu/abs/1974AJ.....79..745L}.
+\bibitem[{Lucy(1974)}]{Lucy1974}
+Lucy, L.~B. 1974, \aj, 79, 745
 
-\bibitem[Mainzer et~al.(2011)Mainzer, Bauer, Grav, Masiero, Cutri, Dailey,
-  Eisenhardt, McMillan, Wright, Walker, Jedicke, Spahr, Tholen, Alles, Beck,
-  Brandenburg, Conrow, Evans, Fowler, Jarrett, Marsh, Masci, McCallon,
-  Wheelock, Wittman, Wyatt, DeBaun, Elliott, Elsbury, Gautier, Gomillion,
-  Leisawitz, Maleszewski, Micheli, and Wilkins]{2011ApJ...731...53M}
-A.~Mainzer, J.~Bauer, T.~Grav, J.~Masiero, R.~M. Cutri, J.~Dailey,
-  P.~Eisenhardt, R.~S. McMillan, E.~Wright, R.~Walker, R.~Jedicke, T.~Spahr,
-  D.~Tholen, R.~Alles, R.~Beck, H.~Brandenburg, T.~Conrow, T.~Evans, J.~Fowler,
-  T.~Jarrett, K.~Marsh, F.~Masci, H.~McCallon, S.~Wheelock, M.~Wittman,
-  P.~Wyatt, E.~DeBaun, G.~Elliott, D.~Elsbury, T.~Gautier, IV, S.~Gomillion,
-  D.~Leisawitz, C.~Maleszewski, M.~Micheli, and A.~Wilkins.
-\newblock Preliminary results from neowise: An enhancement to the wide-field
-  infrared survey explorer for solar system science.
-\newblock \emph{\apj}, 731:\penalty0 53, April 2011.
-\newblock \doi{10.1088/0004-637X/731/1/53}.
-\newblock URL \url{http://adsabs.harvard.edu/abs/2011ApJ...731...53M}.
+\bibitem[{Mainzer {et~al.}(2014)Mainzer, Bauer, Cutri, Dailey, Grav, Masiero,
+  Nugent, Stevenson, Sonnett, \& Wright}]{2014LPI....45.2724M}
+Mainzer, A., Bauer, J., Cutri, R., {et~al.} 2014, in Lunar and Planetary
+  Inst.~Technical Report, Vol.~45, Lunar and Planetary Science Conference, 2724
 
-\bibitem[Mink(1998)]{Mink1998b}
-D.~J. Mink.
-\newblock Wcstools: an image astrometry toolkit.
-\newblock In \emph{AAS/Division of Dynamical Astronomy Meeting}, volume~30 of
-  \emph{Bulletin of the American Astronomical Society}, page 1144, September
-  1998.
-\newblock URL \url{http://adsabs.harvard.edu/abs/1998DDA....29.0806M}.
+\bibitem[{Merlin {et~al.}(2016)Merlin, Bourne, Castellano, Ferguson, Wang,
+  Derriere, Dunlop, Elbaz, \& Fontana}]{Merlin2016a}
+Merlin, E., Bourne, N., Castellano, M., {et~al.} 2016, Astronomy and
+  Astrophysics, 595, A97
 
-\bibitem[Richardson(1972)]{Richardson1972}
-W.~H. Richardson.
-\newblock Bayesian-based iterative method of image restoration.
-\newblock \emph{Journal of the Optical Society of America (1917-1983)},
-  62:\penalty0 55, January 1972.
-\newblock URL \url{http://adsabs.harvard.edu/abs/1972JOSA...62...55R}.
+\bibitem[{Mink(1998)}]{Mink1998b}
+Mink, D.~J. 1998, in Bulletin of the American Astronomical Society, Vol.~30,
+  AAS/Division of Dynamical Astronomy Meeting, 1144
 
-\bibitem[Wright et~al.(2010)Wright, Eisenhardt, Mainzer, Ressler, Cutri,
+\bibitem[{Richardson(1972)}]{Richardson1972}
+Richardson, W.~H. 1972, Journal of the Optical Society of America (1917-1983),
+  62, 55
+
+\bibitem[{Wright {et~al.}(2010)Wright, Eisenhardt, Mainzer, Ressler, Cutri,
   Jarrett, Kirkpatrick, Padgett, McMillan, Skrutskie, Stanford, Cohen, Walker,
   Mather, Leisawitz, Gautier, McLean, Benford, Lonsdale, Blain, Mendez, Irace,
   Duval, Liu, Royer, Heinrichsen, Howard, Shannon, Kendall, Walsh, Larsen,
-  Cardon, Schick, Schwalm, Abid, Fabinsky, Naes, and Tsai]{Wright2010}
-E.~L. Wright, P.~R.~M. Eisenhardt, A.~K. Mainzer, M.~E. Ressler, R.~M. Cutri,
-  T.~Jarrett, J.~D. Kirkpatrick, D.~Padgett, R.~S. McMillan, M.~Skrutskie,
-  S.~A. Stanford, M.~Cohen, R.~G. Walker, J.~C. Mather, D.~Leisawitz, T.~N.
-  Gautier, III, I.~McLean, D.~Benford, C.~J. Lonsdale, A.~Blain, B.~Mendez,
-  W.~R. Irace, V.~Duval, F.~Liu, D.~Royer, I.~Heinrichsen, J.~Howard,
-  M.~Shannon, M.~Kendall, A.~L. Walsh, M.~Larsen, J.~G. Cardon, S.~Schick,
-  M.~Schwalm, M.~Abid, B.~Fabinsky, L.~Naes, and C.-W. Tsai.
-\newblock The wide-field infrared survey explorer (wise): Mission description
-  and initial on-orbit performance.
-\newblock \emph{\aj}, 140:\penalty0 1868-1881, December 2010.
-\newblock \doi{10.1088/0004-6256/140/6/1868}.
-\newblock URL \url{http://adsabs.harvard.edu/abs/2010AJ....140.1868W}.
+  Cardon, Schick, Schwalm, Abid, Fabinsky, Naes, \& Tsai}]{Wright2010}
+Wright, E.~L., Eisenhardt, P. R.~M., Mainzer, A.~K., {et~al.} 2010, \aj, 140,
+  1868
 
 \end{thebibliography}

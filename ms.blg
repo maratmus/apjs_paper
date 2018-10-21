@@ -1,49 +1,50 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: ms.aux
-The style file: plainnat.bst
+The style file: apj.bst
 Database file #1: msNotes.bib
 Database file #2: ms.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty institution in 2013wise.rept....1C
-You've used 15 entries,
-            2773 wiz_defined-function locations,
-            729 strings with 12926 characters,
-and the built_in function-call counts, 21170 in all, are:
-= -- 1484
-> -- 2953
-< -- 10
-+ -- 987
-- -- 972
-* -- 2316
-:= -- 3670
-add.period$ -- 69
-call.type$ -- 15
-change.case$ -- 369
-chr.to.int$ -- 15
-cite$ -- 31
-duplicate$ -- 327
-empty$ -- 537
-format.name$ -- 989
-if$ -- 4004
+You've used 16 entries,
+            3085 wiz_defined-function locations,
+            770 strings with 11594 characters,
+and the built_in function-call counts, 10407 in all, are:
+= -- 605
+> -- 1188
+< -- 9
++ -- 404
+- -- 407
+* -- 1075
+:= -- 2086
+add.period$ -- 16
+call.type$ -- 16
+change.case$ -- 92
+chr.to.int$ -- 16
+cite$ -- 17
+duplicate$ -- 326
+empty$ -- 469
+format.name$ -- 425
+if$ -- 1941
 int.to.chr$ -- 1
-int.to.str$ -- 1
-missing$ -- 14
-newline$ -- 107
-num.names$ -- 62
-pop$ -- 697
+int.to.str$ -- 0
+missing$ -- 12
+newline$ -- 52
+num.names$ -- 65
+pop$ -- 103
 preamble$ -- 1
-purify$ -- 353
+purify$ -- 91
 quote$ -- 0
-skip$ -- 512
+skip$ -- 276
 stack$ -- 0
-substring$ -- 149
-swap$ -- 50
-text.length$ -- 4
+substring$ -- 320
+swap$ -- 28
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 165
+type$ -- 144
 warning$ -- 1
-while$ -- 54
+while$ -- 55
 width$ -- 0
-write$ -- 251
+write$ -- 163
 (There was 1 warning)
