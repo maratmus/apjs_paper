@@ -23,43 +23,60 @@
 \@writefile{toc}{\contentsline {section}{\numberline {3}Overview of Methods for Analysis}{2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Initial preparation of unWISE and SDSS images}{2}{}}
 \citation{Bertin1996}
-\citation{Kron1980}
 \citation{Mink1998b}
 \citation{Richardson1972}
 \citation{Lucy1974}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Input SDSS source catalog}{3}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Rationale}{3}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}PSF matching}{3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Optical catalog construction}{3}{}}
 \citation{Merlin2016a}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Catalog construction}{4}{}}
+\citation{Stern2012}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Kernels for T-PHOT}{4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Template fitting}{4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Redshifts and masses}{4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Catalog post-processing}{4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.1}Star-Galaxy separation}{4}{}}
+\citation{Abolfathi2018}
+\citation{Bolton2012a}
+\citation{Bolzonella2011}
+\citation{Arnouts2011}
+\citation{Brammer2008}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Magnitude error vs. absolute g-band magnitude for one SDSS image. Left panel: magnitude errors in the "g matched to u" image(red) are underestimated as compared to the original SDSS g-band image (blie). Right panel: same as the left panel, but magnitude errors for all sources in the "g matched to u" image were multiplied by the correction coefficient K.}}{5}{}}
+\newlabel{fig:magerr_corr_example}{{1}{5}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces G-band magnitude error correction coefficient K vs. RA of the center of each SDSS image. Different columns are color coded.}}{5}{}}
+\newlabel{fig:all_band_corr}{{2}{5}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces G-band magnitude error correction coefficient K vs. RA of the center of each SDSS image. Different columns are color coded.}}{5}{}}
+\newlabel{fig:color}{{3}{5}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.2}Removing duplicate sources}{5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.3}Masking bright regions}{5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Redshifts and masses}{5}{}}
 \bibdata{msNotes,ms}
 \bibcite{Adelman-McCarthy2007}{{1}{2007}{{Adelman-McCarthy {et~al.}}}{{Adelman-McCarthy, M.A., S.S., K.S.J., S.F., J., N.A., C.A.L., I.K., J.C., T.C., V., A., M., M.R., J.J., W.N., D.M., H.J., J., J., R.J., T., L.N., S., M.A., F.J., A.J., R.J., C.E., I., J.J., M., D.J., M.L., N.W., X., D.P., S.D., J.A., M., B., G., K., J., E.K., J.E., E., P.B., M., S.L., J., T.M., J.S., G.S., R.B., C.M., C.J., D.W., J.A., S.-I., T., Z., S., D.E., A.M., M., G., S.M., S.J., G.R., A.Y., R.G., J., N., D.Q., H., B.C., R.F., M., H., D.C., J., R.H., R., B., D., T., P.M., T.A., A., J.A., R., T., E.H.Jr, H.J., R.C., M., A., H., S., J.P., N., C., J.Jr, J.R., A.C., D., T.R., M.J., P., G.T., M.W., H.-W., C.M., D.J., D.P., R., U., E., K., N.M., J.A., V., S.A., A., C., M.A., M., Y., A.S., I., P., M., A.R., C.A., D.L., A., D.E., J., S., M.S., W., N.P., D.H., A.A., S.D.M., B., B., D.R., D.G., I., S., \& D.B.}}}
 \bibcite{Annis2014}{{2}{2014}{{Annis {et~al.}}}{{Annis, Soares-Santos, Strauss, Becker, Dodelson, Fan, Gunn, Hao, Ivezi{\'c}, Jester, Jiang, Johnston, Kubo, Lampeitl, Lin, Lupton, Miknaitis, Seo, Simet, \& Yanny}}}
-\bibcite{Bertin1996}{{3}{1996}{{Bertin \& Arnouts}}{{}}}
-\bibcite{Bertin2002}{{4}{2002}{{Bertin {et~al.}}}{{Bertin, Mellier, Radovich, Missonnier, Didelon, \& Morin}}}
-\bibcite{2013wise.rept....1C}{{5}{2013}{{Cutri {et~al.}}}{{Cutri, Wright, Conrow, Fowler, Eisenhardt, Grillmair, Kirkpatrick, Masci, McCallon, Wheelock, Fajardo-Acosta, Yan, Benford, Harbut, Jarrett, Lake, Leisawitz, Ressler, Stanford, Tsai, Liu, Helou, Mainzer, Gettings, Gonzalez, Hoffman, Marsh, Padgett, Skrutskie, Beck, Papin, \& Wittman}}}
-\bibcite{2014MNRAS.440.1296H}{{6}{2014}{{Huff {et~al.}}}{{Huff, Hirata, Mandelbaum, Schlegel, Seljak, \& Lupton}}}
-\bibcite{2009AJ....138..305J}{{7}{2009}{{Jiang {et~al.}}}{{Jiang, Fan, Bian, Annis, Chiu, Jester, Lin, Lupton, Richards, Strauss, Malanushenko, Malanushenko, \& Schneider}}}
-\bibcite{Jiang2014}{{8}{2014}{{Jiang {et~al.}}}{{Jiang, Fan, Bian, McGreer, Strauss, Annis, Buck, Green, Hodge, Myers, Rafiee, \& Richards}}}
-\bibcite{Kron1980}{{9}{1980}{{Kron}}{{}}}
-\bibcite{Lang2014e}{{10}{2014}{{Lang}}{{}}}
-\bibcite{Lucy1974}{{11}{1974}{{Lucy}}{{}}}
-\bibcite{2014LPI....45.2724M}{{12}{2014}{{Mainzer {et~al.}}}{{Mainzer, Bauer, Cutri, Dailey, Grav, Masiero, Nugent, Stevenson, Sonnett, \& Wright}}}
-\bibcite{Merlin2016a}{{13}{2016}{{Merlin {et~al.}}}{{Merlin, Bourne, Castellano, Ferguson, Wang, Derriere, Dunlop, Elbaz, \& Fontana}}}
-\bibcite{Mink1998b}{{14}{1998}{{Mink}}{{}}}
-\bibcite{Richardson1972}{{15}{1972}{{Richardson}}{{}}}
-\bibcite{Wright2010}{{16}{2010}{{Wright {et~al.}}}{{Wright, Eisenhardt, Mainzer, Ressler, Cutri, Jarrett, Kirkpatrick, Padgett, McMillan, Skrutskie, Stanford, Cohen, Walker, Mather, Leisawitz, Gautier, McLean, Benford, Lonsdale, Blain, Mendez, Irace, Duval, Liu, Royer, Heinrichsen, Howard, Shannon, Kendall, Walsh, Larsen, Cardon, Schick, Schwalm, Abid, Fabinsky, Naes, \& Tsai}}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}EAZY}{5}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Star-Galaxy separation}{5}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Removing duplicate sources}{5}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.3}Masking bright regions}{5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}FAST}{5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Summary}{5}{}}
+\bibcite{Arnouts2011}{{3}{2011}{{Arnouts \& Ilbert}}{{}}}
+\bibcite{Bertin1996}{{4}{1996}{{Bertin \& Arnouts}}{{}}}
+\bibcite{Bertin2002}{{5}{2002}{{Bertin {et~al.}}}{{Bertin, Mellier, Radovich, Missonnier, Didelon, \& Morin}}}
+\bibcite{Bolzonella2011}{{6}{2011}{{Bolzonella {et~al.}}}{{Bolzonella, Miralles, \& Pell{\'o}}}}
+\bibcite{Brammer2008}{{7}{2008}{{Brammer {et~al.}}}{{Brammer, van Dokkum, \& Coppi}}}
+\bibcite{2013wise.rept....1C}{{8}{2013}{{Cutri {et~al.}}}{{Cutri, Wright, Conrow, Fowler, Eisenhardt, Grillmair, Kirkpatrick, Masci, McCallon, Wheelock, Fajardo-Acosta, Yan, Benford, Harbut, Jarrett, Lake, Leisawitz, Ressler, Stanford, Tsai, Liu, Helou, Mainzer, Gettings, Gonzalez, Hoffman, Marsh, Padgett, Skrutskie, Beck, Papin, \& Wittman}}}
+\bibcite{2014MNRAS.440.1296H}{{9}{2014}{{Huff {et~al.}}}{{Huff, Hirata, Mandelbaum, Schlegel, Seljak, \& Lupton}}}
+\bibcite{2009AJ....138..305J}{{10}{2009}{{Jiang {et~al.}}}{{Jiang, Fan, Bian, Annis, Chiu, Jester, Lin, Lupton, Richards, Strauss, Malanushenko, Malanushenko, \& Schneider}}}
+\bibcite{Jiang2014}{{11}{2014}{{Jiang {et~al.}}}{{Jiang, Fan, Bian, McGreer, Strauss, Annis, Buck, Green, Hodge, Myers, Rafiee, \& Richards}}}
+\bibcite{Kron1980}{{12}{1980}{{Kron}}{{}}}
+\bibcite{Lang2014e}{{13}{2014}{{Lang}}{{}}}
+\bibcite{Lucy1974}{{14}{1974}{{Lucy}}{{}}}
+\bibcite{2014LPI....45.2724M}{{15}{2014}{{Mainzer {et~al.}}}{{Mainzer, Bauer, Cutri, Dailey, Grav, Masiero, Nugent, Stevenson, Sonnett, \& Wright}}}
+\bibcite{Merlin2016a}{{16}{2016}{{Merlin {et~al.}}}{{Merlin, Bourne, Castellano, Ferguson, Wang, Derriere, Dunlop, Elbaz, \& Fontana}}}
+\bibcite{Mink1998b}{{17}{1998}{{Mink}}{{}}}
+\bibcite{Richardson1972}{{18}{1972}{{Richardson}}{{}}}
+\bibcite{Stern2012}{{19}{2012}{{Stern {et~al.}}}{{Stern, Assef, Benford, Blain, Cutri, Dey, Eisenhardt, Griffith, Jarrett, Lake, Masci, Petty, Stanford, Tsai, Wright, Yan, Harrison, \& Madsen}}}
+\bibcite{Wright2010}{{20}{2010}{{Wright {et~al.}}}{{Wright, Eisenhardt, Mainzer, Ressler, Cutri, Jarrett, Kirkpatrick, Padgett, McMillan, Skrutskie, Stanford, Cohen, Walker, Mather, Leisawitz, Gautier, McLean, Benford, Lonsdale, Blain, Mendez, Irace, Duval, Liu, Royer, Heinrichsen, Howard, Shannon, Kendall, Walsh, Larsen, Cardon, Schick, Schwalm, Abid, Fabinsky, Naes, \& Tsai}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}FAST}{6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Summary}{6}{}}
 \bibstyle{apj}
-\@writefile{toc}{\contentsline {section}{\numberline {A}Acknowledgments}{6}{}}
-\newlabel{LastPage}{{}{6}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Color vs. spectroscopic redshift for the whole set of the photometric catalog sources (colored black) with available spectra. Colors of the six CWW+KIN templates as a function of redshift templates are plotted as red lines. These templates alone cover sufficient area on the plane and their linear combination returns reliable photometric redshift}}{7}{}}
+\newlabel{fig:color_z}{{4}{7}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Acknowledgments}{7}{}}
+\newlabel{LastPage}{{}{7}{}{}{}}

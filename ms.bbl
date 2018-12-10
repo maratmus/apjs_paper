@@ -21,6 +21,10 @@ Adelman-McCarthy, J., M.A., A., S.S., A., {et~al.} 2007, VizieR Online Data
   Lupton, Miknaitis, Seo, Simet, \& Yanny}]{Annis2014}
 Annis, J., Soares-Santos, M., Strauss, M.~A., {et~al.} 2014, \apj, 794, 120
 
+\bibitem[{Arnouts \& Ilbert(2011)}]{Arnouts2011}
+Arnouts, S., \& Ilbert, O. 2011, LePHARE: Photometric Analysis for Redshift
+  Estimate, Astrophysics Source Code Library, ascl:1108.009
+
 \bibitem[{Bertin \& Arnouts(1996)}]{Bertin1996}
 Bertin, E., \& Arnouts, S. 1996, \aaps, 117, 393
 
@@ -30,6 +34,14 @@ Bertin, E., Mellier, Y., Radovich, M., {et~al.} 2002, in Astronomical Society
   of the Pacific Conference Series, Vol. 281, Astronomical Data Analysis
   Software and Systems XI, ed. D.~A. {Bohlender}, D.~{Durand}, \& T.~H.
   {Handley}, 228
+
+\bibitem[{Bolzonella {et~al.}(2011)Bolzonella, Miralles, \&
+  Pell{\'o}}]{Bolzonella2011}
+Bolzonella, M., Miralles, J.-M., \& Pell{\'o}, R. 2011, Hyperz: Photometric
+  Redshift Code, Astrophysics Source Code Library, ascl:1108.010
+
+\bibitem[{Brammer {et~al.}(2008)Brammer, van Dokkum, \& Coppi}]{Brammer2008}
+Brammer, G.~B., van Dokkum, P.~G., \& Coppi, P. 2008, \apj, 686, 1503
 
 \bibitem[{Cutri {et~al.}(2013)Cutri, Wright, Conrow, Fowler, Eisenhardt,
   Grillmair, Kirkpatrick, Masci, McCallon, Wheelock, Fajardo-Acosta, Yan,
@@ -78,6 +90,11 @@ Mink, D.~J. 1998, in Bulletin of the American Astronomical Society, Vol.~30,
 \bibitem[{Richardson(1972)}]{Richardson1972}
 Richardson, W.~H. 1972, Journal of the Optical Society of America (1917-1983),
   62, 55
+
+\bibitem[{Stern {et~al.}(2012)Stern, Assef, Benford, Blain, Cutri, Dey,
+  Eisenhardt, Griffith, Jarrett, Lake, Masci, Petty, Stanford, Tsai, Wright,
+  Yan, Harrison, \& Madsen}]{Stern2012}
+Stern, D., Assef, R.~J., Benford, D.~J., {et~al.} 2012, \apj, 753, 30
 
 \bibitem[{Wright {et~al.}(2010)Wright, Eisenhardt, Mainzer, Ressler, Cutri,
   Jarrett, Kirkpatrick, Padgett, McMillan, Skrutskie, Stanford, Cohen, Walker,

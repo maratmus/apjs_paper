@@ -6,45 +6,45 @@ Database file #1: msNotes.bib
 Database file #2: ms.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty institution in 2013wise.rept....1C
-You've used 16 entries,
+You've used 20 entries,
             3085 wiz_defined-function locations,
-            770 strings with 11594 characters,
-and the built_in function-call counts, 10407 in all, are:
-= -- 605
-> -- 1188
-< -- 9
-+ -- 404
-- -- 407
-* -- 1075
-:= -- 2086
-add.period$ -- 16
-call.type$ -- 16
-change.case$ -- 92
-chr.to.int$ -- 16
-cite$ -- 17
-duplicate$ -- 326
-empty$ -- 469
-format.name$ -- 425
-if$ -- 1941
+            800 strings with 12520 characters,
+and the built_in function-call counts, 12297 in all, are:
+= -- 758
+> -- 1341
+< -- 10
++ -- 454
+- -- 461
+* -- 1245
+:= -- 2449
+add.period$ -- 20
+call.type$ -- 20
+change.case$ -- 117
+chr.to.int$ -- 20
+cite$ -- 21
+duplicate$ -- 402
+empty$ -- 577
+format.name$ -- 486
+if$ -- 2309
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 12
-newline$ -- 52
-num.names$ -- 65
-pop$ -- 103
+missing$ -- 14
+newline$ -- 64
+num.names$ -- 81
+pop$ -- 129
 preamble$ -- 1
-purify$ -- 91
+purify$ -- 116
 quote$ -- 0
-skip$ -- 276
+skip$ -- 332
 stack$ -- 0
-substring$ -- 320
+substring$ -- 384
 swap$ -- 28
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 144
+type$ -- 180
 warning$ -- 1
-while$ -- 55
+while$ -- 68
 width$ -- 0
-write$ -- 163
+write$ -- 205
 (There was 1 warning)
