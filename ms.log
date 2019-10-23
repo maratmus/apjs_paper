@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.18)  26 NOV 2018 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.18)  23 OCT 2019 16:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -290,42 +290,67 @@ Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 \epsfxsize=\dimen126
 \epsfysize=\dimen127
 )
-Class revtex4-1 Info: Patching LaTeX tabular. on input line 18.
-Class revtex4-1 Info: Patching longtable package on input line 18.
-Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 18.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box47
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
 
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 18.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 18.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 18.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
+\col@sep=\dimen128
+\ar@mcellbox=\box48
+\extrarowheight=\dimen129
+\NC@list=\toks27
+\extratabsurround=\skip67
+\backup@length=\skip68
+\ar@cellbox=\box49
+)
+\TX@col@width=\dimen130
+\TX@old@table=\dimen131
+\TX@old@col=\dimen132
+\TX@target=\dimen133
+\TX@delta=\dimen134
+\TX@cols=\count125
+\TX@ftn=\toks28
+)
+Class revtex4-1 Info: Unrecognized array package. Please update this document c
+lass! (Proceeding with fingers crossed.) on input line 20.
+Class revtex4-1 Info: Patching longtable package on input line 20.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 20.
+
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 20.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 20.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 20.
  (./ms.aux)
 \openout1 = `ms.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count125
-\scratchdimen=\dimen128
-\scratchbox=\box47
-\nofMPsegments=\count126
-\nofMParguments=\count127
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count128
-\MPscratchDim=\dimen129
-\MPnumerator=\count129
-\makeMPintoPDFobject=\count130
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count126
+\scratchdimen=\dimen135
+\scratchbox=\box50
+\nofMPsegments=\count127
+\nofMParguments=\count128
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count129
+\MPscratchDim=\dimen136
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
+\everyMPtoPDFconversion=\toks30
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -382,199 +407,445 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \celsius on input line 18.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 18.
+LaTeX Info: Redefining \celsius on input line 20.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 20.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 18.
-Package gensymb Info: Using \Omega for \ohm on input line 18.
+LaTeX Info: Redefining \ohm on input line 20.
+Package gensymb Info: Using \Omega for \ohm on input line 20.
 
 Package gensymb Warning: Not defining \micro.
 
 \openout3 = `msNotes.bib'.
 
-
-Class revtex4-1 Warning: Assuming \noaffiliation for authors.
-
-LaTeX Font Info:    Try loading font information for U+lasy on input line 52.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 50.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 52.
+LaTeX Font Info:    Try loading font information for U+msa on input line 50.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 52.
+LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Warning: Reference `fig:sdss' on page 1 undefined on input line 82.
+Class revtex4-1 Warning: Assuming \noaffiliation for authors.
 
 [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 1062) in paragraph at lines 121--122
+
+LaTeX Warning: Reference `fig:sdss' on page 2 undefined on input line 91.
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 130--131
 \OT1/cmr/m/n/10 2048 x 2048 pix-els, TAN pro-jected at 2.75"/pixel.
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 123--124
+Underfull \hbox (badness 1168) in paragraph at lines 132--133
 \OT1/cmr/m/n/10 de-vi-a-tion (scat-ter) of the individual-exposure pix-els
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
-[2] [3]
-<figures/figure_magerr_corr_gband_example_uncorr.png, id=29, 905.3825pt x 582.1
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 151--151
+[]|\OT1/cmr/bx/n/8 Survey
+ []
+
+
+Underfull \hbox (badness 1762) in paragraph at lines 151--151
+\OT1/cmr/bx/n/8 of the spec-tro-
+ []
+
+
+Underfull \hbox (badness 2512) in paragraph at lines 158--158
+[]|\OT1/cmr/m/n/8 Scodeggio et al. (2018),
+ []
+
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+[]\OT1/cmr/m/n/10 The im-age weight-ing scheme was set to
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 265--266
+\OT1/cmr/m/n/10 no longer re-flect the pixel-to-pixel weights be-cause
+ []
+
+<figures/figure_magerr_corr_gband_example_uncorr.png, id=37, 905.3825pt x 582.1
 75pt>
 File: figures/figure_magerr_corr_gband_example_uncorr.png Graphic file (type pn
 g)
 <use figures/figure_magerr_corr_gband_example_uncorr.png>
 Package pdftex.def Info: figures/figure_magerr_corr_gband_example_uncorr.png  u
-sed on input line 190.
-(pdftex.def)             Requested size: 256.55872pt x 164.97108pt.
-<figures/figure_magerr_corr_gband_example_corr.png, id=30, 905.3825pt x 582.175
-pt>
-File: figures/figure_magerr_corr_gband_example_corr.png Graphic file (type png)
+sed on input line 276.
+(pdftex.def)             Requested size: 245.25781pt x 189.23128pt.
 
-<use figures/figure_magerr_corr_gband_example_corr.png>
-Package pdftex.def Info: figures/figure_magerr_corr_gband_example_corr.png  use
-d on input line 191.
-(pdftex.def)             Requested size: 256.55872pt x 164.97108pt.
+Underfull \hbox (badness 10000) in paragraph at lines 275--283
 
-Overfull \hbox (1.88892pt too wide) in paragraph at lines 190--192
-[][] [] 
  []
 
-<figures/figure_all_band_correction_lines.png, id=31, 936.49875pt x 487.8225pt>
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 299.
 
-File: figures/figure_all_band_correction_lines.png Graphic file (type png)
-<use figures/figure_all_band_correction_lines.png>
-Package pdftex.def Info: figures/figure_all_band_correction_lines.png  used on 
-input line 197.
-(pdftex.def)             Requested size: 256.55872pt x 133.64171pt.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 299.
+ [5 <./figures/figure_magerr_corr_gband_example_uncorr.png (PNG copy)>] [6]
 
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 197--198
-[][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures/figure_color_comparison.png, id=32, 1372.12625pt x 772.8875pt>
-File: figures/figure_color_comparison.png Graphic file (type png)
-<use figures/figure_color_comparison.png>
-Package pdftex.def Info: figures/figure_color_comparison.png  used on input lin
-e 229.
-(pdftex.def)             Requested size: 256.55872pt x 144.51508pt.
-
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 229--230
-[][] 
- []
+Package natbib Warning: Citation `Coleman1980' on page 7 undefined on input lin
+e 418.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4]
-
-Package natbib Warning: Citation `Abolfathi2018' on page 5 undefined on input l
-ine 254.
+Package natbib Warning: Citation `Kinney1996' on page 7 undefined on input line
+ 418.
 
 
-Package natbib Warning: Citation `Bolton2012a' on page 5 undefined on input lin
-e 254.
+LaTeX Warning: Reference `fig:photo_spec' on page 7 undefined on input line 418
+.
 
-[5 <./figures/figure_magerr_corr_gband_example_uncorr.png (PNG copy)> <./figure
-s/figure_magerr_corr_gband_example_corr.png (PNG copy)> <./figures/figure_all_b
-and_correction_lines.png (PNG copy)> <./figures/figure_color_comparison.png (PN
-G copy)>]
 Package epstopdf Info: Source file: <figures/color_gr_z.eps>
-(epstopdf)                    date: 2018-11-09 17:58:59
-(epstopdf)                    size: 1884711 bytes
+(epstopdf)                    date: 2019-08-20 13:59:08
+(epstopdf)                    size: 2048292 bytes
 (epstopdf)             Output file: <figures/color_gr_z-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-11-09 18:00:33
-(epstopdf)                    size: 1286179 bytes
+(epstopdf)                    date: 2019-08-20 14:01:01
+(epstopdf)                    size: 1415469 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/color_gr_z-eps-con
 verted-to.pdf figures/color_gr_z.eps>
-(epstopdf)             \includegraphics on input line 269.
+(epstopdf)             \includegraphics on input line 421.
 Package epstopdf Info: Output file is already uptodate.
-<figures/color_gr_z-eps-converted-to.pdf, id=42, 505.89pt x 361.35pt>
+<figures/color_gr_z-eps-converted-to.pdf, id=44, 505.89pt x 361.35pt>
 File: figures/color_gr_z-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/color_gr_z-eps-converted-to.pdf>
 Package pdftex.def Info: figures/color_gr_z-eps-converted-to.pdf  used on input
- line 269.
+ line 421.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 Package epstopdf Info: Source file: <figures/color_w1w2_z.eps>
-(epstopdf)                    date: 2018-11-09 17:58:59
-(epstopdf)                    size: 1732906 bytes
+(epstopdf)                    date: 2019-08-20 13:55:59
+(epstopdf)                    size: 1636704 bytes
 (epstopdf)             Output file: <figures/color_w1w2_z-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2018-11-09 18:00:34
-(epstopdf)                    size: 1166737 bytes
+(epstopdf)                    date: 2019-08-20 14:01:02
+(epstopdf)                    size: 1141130 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/color_w1w2_z-eps-c
 onverted-to.pdf figures/color_w1w2_z.eps>
-(epstopdf)             \includegraphics on input line 270.
+(epstopdf)             \includegraphics on input line 422.
 Package epstopdf Info: Output file is already uptodate.
-<figures/color_w1w2_z-eps-converted-to.pdf, id=43, 505.89pt x 361.35pt>
+<figures/color_w1w2_z-eps-converted-to.pdf, id=45, 505.89pt x 361.35pt>
 File: figures/color_w1w2_z-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/color_w1w2_z-eps-converted-to.pdf>
 Package pdftex.def Info: figures/color_w1w2_z-eps-converted-to.pdf  used on inp
-ut line 270.
+ut line 422.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-Overfull \hbox (1.88892pt too wide) in paragraph at lines 269--271
+Overfull \hbox (1.88892pt too wide) in paragraph at lines 421--423
 [][] [] 
  []
 
-(./ms.bbl) [6]
+<figures/redshift_prior_18_25.png, id=46, 760.8425pt x 528.97626pt>
+File: figures/redshift_prior_18_25.png Graphic file (type png)
+<use figures/redshift_prior_18_25.png>
+Package pdftex.def Info: figures/redshift_prior_18_25.png  used on input line 4
+37.
+(pdftex.def)             Requested size: 245.26244pt x 189.22864pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--441
+
+ []
+
+<figures/eazy_spec1.png, id=47, 722.7pt x 469.755pt>
+File: figures/eazy_spec1.png Graphic file (type png)
+<use figures/eazy_spec1.png>
+Package pdftex.def Info: figures/eazy_spec1.png  used on input line 468.
+(pdftex.def)             Requested size: 256.55872pt x 166.7606pt.
+<figures/eazy_nowise_spec.png, id=48, 722.7pt x 469.755pt>
+File: figures/eazy_nowise_spec.png Graphic file (type png)
+<use figures/eazy_nowise_spec.png>
+Package pdftex.def Info: figures/eazy_nowise_spec.png  used on input line 469.
+(pdftex.def)             Requested size: 256.55872pt x 166.7606pt.
+
+Overfull \hbox (1.88892pt too wide) in paragraph at lines 468--470
+[][] [] 
+ []
+
+<figures/zw1_outl_color1.png, id=49, 722.7pt x 469.755pt>
+File: figures/zw1_outl_color1.png Graphic file (type png)
+<use figures/zw1_outl_color1.png>
+Package pdftex.def Info: figures/zw1_outl_color1.png  used on input line 479.
+(pdftex.def)             Requested size: 256.55872pt x 166.7606pt.
+<figures/zw1_outl_photoz_spec_z.png, id=50, 785.93625pt x 501.875pt>
+File: figures/zw1_outl_photoz_spec_z.png Graphic file (type png)
+<use figures/zw1_outl_photoz_spec_z.png>
+Package pdftex.def Info: figures/zw1_outl_photoz_spec_z.png  used on input line
+ 480.
+(pdftex.def)             Requested size: 256.55872pt x 163.83495pt.
+
+Overfull \hbox (1.88892pt too wide) in paragraph at lines 479--481
+[][] [] 
+ []
+
+
+LaTeX Warning: Reference `z_max' on page 7 undefined on input line 485.
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 485--486
+[]\OT1/cmr/m/n/10 As can be seen on Fig.4[] both EAZY (red) and
+ []
+
+[7] [8 <./figures/color_gr_z-eps-converted-to.pdf> <./figures/color_w1w2_z-eps-
+converted-to.pdf> <./figures/redshift_prior_18_25.png (PNG copy)>]
+<figures/annz_highz_photoz_specz_test1.png, id=62, 722.7pt x 469.755pt>
+File: figures/annz_highz_photoz_specz_test1.png Graphic file (type png)
+<use figures/annz_highz_photoz_specz_test1.png>
+Package pdftex.def Info: figures/annz_highz_photoz_specz_test1.png  used on inp
+ut line 519.
+(pdftex.def)             Requested size: 245.26262pt x 189.23189pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--523
+
+ []
+
+<figures/color_color_annz_nobulk.png, id=63, 799.98875pt x 479.7925pt>
+File: figures/color_color_annz_nobulk.png Graphic file (type png)
+<use figures/color_color_annz_nobulk.png>
+Package pdftex.def Info: figures/color_color_annz_nobulk.png  used on input lin
+e 537.
+(pdftex.def)             Requested size: 256.55872pt x 153.87349pt.
+<figures/zphot_zspec_annz_nobulk.png, id=64, 799.98875pt x 465.74pt>
+File: figures/zphot_zspec_annz_nobulk.png Graphic file (type png)
+<use figures/zphot_zspec_annz_nobulk.png>
+Package pdftex.def Info: figures/zphot_zspec_annz_nobulk.png  used on input lin
+e 538.
+(pdftex.def)             Requested size: 256.55872pt x 149.36674pt.
+
+Overfull \hbox (1.88892pt too wide) in paragraph at lines 537--539
+[][] [] 
+ []
+
+[9 <./figures/eazy_spec1.png (PNG copy)> <./figures/eazy_nowise_spec.png (PNG c
+opy)> <./figures/zw1_outl_color1.png (PNG copy)> <./figures/zw1_outl_photoz_spe
+c_z.png (PNG copy)> <./figures/annz_highz_photoz_specz_test1.png (PNG copy)>]
+
+LaTeX Warning: Command \r invalid in math mode on input line 578.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 578.
+
+[10 <./figures/color_color_annz_nobulk.png (PNG copy)> <./figures/zphot_zspec_a
+nnz_nobulk.png (PNG copy)>]
+
+LaTeX Warning: Command \r invalid in math mode on input line 580.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 584.
+
+<figures/hist_3zphot.png, id=71, 796.9775pt x 548.0475pt>
+File: figures/hist_3zphot.png Graphic file (type png)
+<use figures/hist_3zphot.png>
+Package pdftex.def Info: figures/hist_3zphot.png  used on input line 602.
+(pdftex.def)             Requested size: 245.26065pt x 189.23547pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--607
+
+ []
+
+<figures/hist_lowz_highz_CFHTLS.png, id=72, 720.6925pt x 487.8225pt>
+File: figures/hist_lowz_highz_CFHTLS.png Graphic file (type png)
+<use figures/hist_lowz_highz_CFHTLS.png>
+Package pdftex.def Info: figures/hist_lowz_highz_CFHTLS.png  used on input line
+ 618.
+(pdftex.def)             Requested size: 245.26314pt x 189.23769pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--622
+
+ []
+
+[11 <./figures/hist_3zphot.png (PNG copy)>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 625.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 625.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
+<figures/high_z/criteria.png, id=76, 853.1875pt x 453.695pt>
+File: figures/high_z/criteria.png Graphic file (type png)
+<use figures/high_z/criteria.png>
+Package pdftex.def Info: figures/high_z/criteria.png  used on input line 628.
+(pdftex.def)             Requested size: 245.26997pt x 189.23526pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 627--632
+
+ []
+
+
+Underfull \hbox (badness 1270) in paragraph at lines 642--643
+\OT1/cmr/m/n/10 one, that just scat-ters high-z sources all over the
+ []
+
+<figures/hist_highz.png, id=77, 886.31125pt x 451.6875pt>
+File: figures/hist_highz.png Graphic file (type png)
+<use figures/hist_highz.png>
+Package pdftex.def Info: figures/hist_highz.png  used on input line 646.
+(pdftex.def)             Requested size: 245.2578pt x 189.23878pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 645--652
+
+ []
+
+
+Package natbib Warning: Citation `Beck2016' on page 12 undefined on input line 
+658.
+
+
+Package natbib Warning: Citation `Reis2012' on page 12 undefined on input line 
+658.
+
+
+Package natbib Warning: Citation `Gao2018' on page 12 undefined on input line 6
+58.
+
+[12 <./figures/hist_lowz_highz_CFHTLS.png (PNG copy)> <./figures/high_z/criteri
+a.png (PNG copy)> <./figures/hist_highz.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 664--664
+[]|\OT1/cmr/m/n/8 Number of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 664--665
+[]|\OT1/cmr/m/n/8 Median
+ []
+
+
+Overfull \hbox (1.74265pt too wide) in paragraph at lines 668--668
+[]|\OT1/cmr/bx/n/8 SCUSS+SDSS+WISE| 
+ []
+
+
+Overfull \hbox (2.01625pt too wide) in paragraph at lines 688--688
+[]|\OT1/cmr/bx/n/8 EAZY[]nowise| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 688--688
+\OT1/cmr/bx/n/8 SDSS +
+ []
+
+
+Overfull \hbox (2.01625pt too wide) in paragraph at lines 691--691
+[]|\OT1/cmr/bx/n/8 EAZY[]nowise| 
+ []
+
+<figures/photoz/eazy_eazy_nowise.png, id=82, 743.77875pt x 493.845pt>
+File: figures/photoz/eazy_eazy_nowise.png Graphic file (type png)
+<use figures/photoz/eazy_eazy_nowise.png>
+Package pdftex.def Info: figures/photoz/eazy_eazy_nowise.png  used on input lin
+e 716.
+(pdftex.def)             Requested size: 230.90128pt x 153.30888pt.
+<figures/photoz/annz_eazy.png, id=83, 743.77875pt x 493.845pt>
+File: figures/photoz/annz_eazy.png Graphic file (type png)
+<use figures/photoz/annz_eazy.png>
+Package pdftex.def Info: figures/photoz/annz_eazy.png  used on input line 717.
+(pdftex.def)             Requested size: 230.90128pt x 153.30888pt.
+<figures/photoz/eazy_dr15.png, id=84, 743.77875pt x 493.845pt>
+File: figures/photoz/eazy_dr15.png Graphic file (type png)
+<use figures/photoz/eazy_dr15.png>
+Package pdftex.def Info: figures/photoz/eazy_dr15.png  used on input line 719.
+(pdftex.def)             Requested size: 230.90128pt x 153.30888pt.
+<figures/photoz/annz_reis.png, id=85, 743.77875pt x 493.845pt>
+File: figures/photoz/annz_reis.png Graphic file (type png)
+<use figures/photoz/annz_reis.png>
+Package pdftex.def Info: figures/photoz/annz_reis.png  used on input line 720.
+(pdftex.def)             Requested size: 230.90128pt x 153.30888pt.
+<figures/photoz/eazy_nowise_scuss.png, id=86, 743.77875pt x 493.845pt>
+File: figures/photoz/eazy_nowise_scuss.png Graphic file (type png)
+<use figures/photoz/eazy_nowise_scuss.png>
+Package pdftex.def Info: figures/photoz/eazy_nowise_scuss.png  used on input li
+ne 722.
+(pdftex.def)             Requested size: 230.90128pt x 153.30888pt.
+<figures/photoz/annz_scuss.png, id=87, 743.77875pt x 493.845pt>
+File: figures/photoz/annz_scuss.png Graphic file (type png)
+<use figures/photoz/annz_scuss.png>
+Package pdftex.def Info: figures/photoz/annz_scuss.png  used on input line 723.
+
+(pdftex.def)             Requested size: 230.90128pt x 153.30888pt.
+<figures/photoz/eazy_cfhtls.png, id=88, 743.77875pt x 493.845pt>
+File: figures/photoz/eazy_cfhtls.png Graphic file (type png)
+<use figures/photoz/eazy_cfhtls.png>
+Package pdftex.def Info: figures/photoz/eazy_cfhtls.png  used on input line 725
+.
+(pdftex.def)             Requested size: 230.90128pt x 153.30888pt.
+<figures/photoz/annz_cfhtls.png, id=89, 743.77875pt x 493.845pt>
+File: figures/photoz/annz_cfhtls.png Graphic file (type png)
+<use figures/photoz/annz_cfhtls.png>
+Package pdftex.def Info: figures/photoz/annz_cfhtls.png  used on input line 726
+.
+(pdftex.def)             Requested size: 230.90128pt x 153.30888pt.
+(./ms.bbl) [13]
+Underfull \hbox (badness 10000) in paragraph at lines 765--776
+
+ []
+
 
 Package natbib Warning: There were undefined citations.
 
-[7 <./figures/color_gr_z-eps-converted-to.pdf> <./figures/color_w1w2_z-eps-conv
-erted-to.pdf>] (./ms.aux)
+[14] [15 <./figures/photoz/eazy_eazy_nowise.png (PNG copy)> <./figures/photoz/a
+nnz_eazy.png (PNG copy)> <./figures/photoz/eazy_dr15.png (PNG copy)> <./figures
+/photoz/annz_reis.png (PNG copy)> <./figures/photoz/eazy_nowise_scuss.png (PNG 
+copy)> <./figures/photoz/annz_scuss.png (PNG copy)> <./figures/photoz/eazy_cfht
+ls.png (PNG copy)> <./figures/photoz/annz_cfhtls.png (PNG copy)>] (./ms.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5143 strings out of 492649
- 68894 string characters out of 6129622
- 181085 words of memory out of 5000000
- 8922 multiletter control sequences out of 15000+600000
- 13988 words of font info for 58 fonts, out of 8000000 for 9000
+ 5470 strings out of 492649
+ 75044 string characters out of 6129622
+ 199049 words of memory out of 5000000
+ 9216 multiletter control sequences out of 15000+600000
+ 15683 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,29p,1552b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,15n,29p,1836b,414s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ms.pdf (7 pages, 2990748 bytes).
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2018/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2018/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2018/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on ms.pdf (15 pages, 5296224 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 173 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -21,9 +21,8 @@ Adelman-McCarthy, J., M.A., A., S.S., A., {et~al.} 2007, VizieR Online Data
   Lupton, Miknaitis, Seo, Simet, \& Yanny}]{Annis2014}
 Annis, J., Soares-Santos, M., Strauss, M.~A., {et~al.} 2014, \apj, 794, 120
 
-\bibitem[{Arnouts \& Ilbert(2011)}]{Arnouts2011}
-Arnouts, S., \& Ilbert, O. 2011, LePHARE: Photometric Analysis for Redshift
-  Estimate, Astrophysics Source Code Library, ascl:1108.009
+\bibitem[{Ben{\'{\i}}tez(2000)}]{Benitez2000}
+Ben{\'{\i}}tez, N. 2000, \apj, 536, 571
 
 \bibitem[{Bertin \& Arnouts(1996)}]{Bertin1996}
 Bertin, E., \& Arnouts, S. 1996, \aaps, 117, 393
@@ -35,10 +34,12 @@ Bertin, E., Mellier, Y., Radovich, M., {et~al.} 2002, in Astronomical Society
   Software and Systems XI, ed. D.~A. {Bohlender}, D.~{Durand}, \& T.~H.
   {Handley}, 228
 
-\bibitem[{Bolzonella {et~al.}(2011)Bolzonella, Miralles, \&
-  Pell{\'o}}]{Bolzonella2011}
-Bolzonella, M., Miralles, J.-M., \& Pell{\'o}, R. 2011, Hyperz: Photometric
-  Redshift Code, Astrophysics Source Code Library, ascl:1108.010
+\bibitem[{Bolton {et~al.}(2012)Bolton, Schlegel, Aubourg, Bailey, Bhardwaj,
+  Brownstein, Burles, Chen, Dawson, Eisenstein, Gunn, Knapp, Loomis, Lupton,
+  Maraston, Muna, Myers, Olmstead, Padmanabhan, P{\^a}ris, Percival, Petitjean,
+  Rockosi, Ross, Schneider, Shu, Strauss, Thomas, Tremonti, Wake, Weaver, \&
+  Wood-Vasey}]{Bolton2012a}
+Bolton, A.~S., Schlegel, D.~J., Aubourg, {\'E}., {et~al.} 2012, \aj, 144, 144
 
 \bibitem[{Brammer {et~al.}(2008)Brammer, van Dokkum, \& Coppi}]{Brammer2008}
 Brammer, G.~B., van Dokkum, P.~G., \& Coppi, P. 2008, \apj, 686, 1503
@@ -50,6 +51,37 @@ Brammer, G.~B., van Dokkum, P.~G., \& Coppi, P. 2008, \apj, 686, 1503
   Papin, \& Wittman}]{2013wise.rept....1C}
 Cutri, R.~M., Wright, E.~L., Conrow, T., {et~al.} 2013, Explanatory Supplement
   to the AllWISE Data Release Products, Tech. rep.
+
+\bibitem[{Davis {et~al.}(2003)Davis, Faber, Newman, Phillips, Ellis, Steidel,
+  Conselice, Coil, Finkbeiner, Koo, Guhathakurta, Weiner, Schiavon, Willmer,
+  Kaiser, Luppino, Wirth, Connolly, Eisenhardt, Cooper, \& Gerke}]{Davis2003c}
+Davis, M., Faber, S.~M., Newman, J., {et~al.} 2003, in \procspie, Vol. 4834,
+  Discoveries and Research Prospects from 6- to 10-Meter-Class Telescopes II,
+  ed. P.~{Guhathakurta}, 161--172
+
+\bibitem[{Drinkwater {et~al.}(2010)Drinkwater, Jurek, Blake, Woods, Pimbblet,
+  Glazebrook, Sharp, Pracy, Brough, Colless, Couch, Croom, Davis, Forbes,
+  Forster, Gilbank, Gladders, Jelliffe, Jones, Li, Madore, Martin, Poole,
+  Small, Wisnioski, Wyder, \& Yee}]{Drinkwater2010}
+Drinkwater, M.~J., Jurek, R.~J., Blake, C., {et~al.} 2010, \mnras, 401, 1429
+
+\bibitem[{Garilli {et~al.}(2008)Garilli, Le~F{\`e}vre, Guzzo, Maccagni,
+  Le~Brun, de~la Torre, Meneux, Tresse, Franzetti, Zamorani, Zanichelli,
+  Gregorini, Vergani, Bottini, Scaramella, Scodeggio, Vettolani, Adami,
+  Arnouts, Bardelli, Bolzonella, Cappi, Charlot, Ciliegi, Contini, Foucaud,
+  Gavignaud, Ilbert, Iovino, Lamareille, McCracken, Marano, Marinoni, Mazure,
+  Merighi, Paltani, Pell{\`o}, Pollo, Pozzetti, Radovich, Zucca, Blaizot,
+  Bongiorno, Cucciati, Mellier, Moreau, \& Paioro}]{Garilli2008}
+Garilli, B., Le~F{\`e}vre, O., Guzzo, L., {et~al.} 2008, \aap, 486, 683
+
+\bibitem[{Guzzo {et~al.}(2014)Guzzo, Scodeggio, Garilli, Granett, Fritz, Abbas,
+  Adami, Arnouts, Bel, Bolzonella, Bottini, Branchini, Cappi, Coupon, Cucciati,
+  Davidzon, De~Lucia, de~la Torre, Franzetti, Fumana, Hudelot, Ilbert, Iovino,
+  Krywult, Le~Brun, Le~F{\`e}vre, Maccagni, Ma{\l}ek, Marulli, McCracken,
+  Paioro, Peacock, Polletta, Pollo, Schlagenhaufer, Tasca, Tojeiro, Vergani,
+  Zamorani, Zanichelli, Burden, Di~Porto, Marchetti, Marinoni, Mellier,
+  Moscardini, Nichol, Percival, Phleps, \& Wolk}]{Guzzo2014}
+Guzzo, L., Scodeggio, M., Garilli, B., {et~al.} 2014, \aap, 566, A108
 
 \bibitem[{Huff {et~al.}(2014)Huff, Hirata, Mandelbaum, Schlegel, Seljak, \&
   Lupton}]{2014MNRAS.440.1296H}
@@ -64,11 +96,34 @@ Jiang, L., Fan, X., Bian, F., {et~al.} 2009, \aj, 138, 305
   Green, Hodge, Myers, Rafiee, \& Richards}]{Jiang2014}
 ---. 2014, \apjs, 213, 12
 
-\bibitem[{Kron(1980)}]{Kron1980}
-Kron, R.~G. 1980, \apjs, 43, 305
+\bibitem[{Jones {et~al.}(2004)Jones, Saunders, Colless, Read, Parker, Watson,
+  Campbell, Burkey, Mauch, Moore, Hartley, Cass, James, Russell, Fiegert, Dawe,
+  Huchra, Jarrett, Lahav, Lucey, Mamon, Proust, Sadler, \&
+  Wakamatsu}]{Jones2004}
+Jones, D.~H., Saunders, W., Colless, M., {et~al.} 2004, \mnras, 355, 747
+
+\bibitem[{Jones {et~al.}(2009)Jones, Read, Saunders, Colless, Jarrett, Parker,
+  Fairall, Mauch, Sadler, Watson, Burton, Campbell, Cass, Croom, Dawe, Fiegert,
+  Frankcombe, Hartley, Huchra, James, Kirby, Lahav, Lucey, Mamon, Moore,
+  Peterson, Prior, Proust, Russell, Safouris, Wakamatsu, Westra, \&
+  Williams}]{Jones2009}
+Jones, D.~H., Read, M.~A., Saunders, W., {et~al.} 2009, \mnras, 399, 683
+
+\bibitem[{Laidler {et~al.}(2007)Laidler, Papovich, Grogin, Idzi, Dickinson,
+  Ferguson, Hilbert, Clubb, \& Ravindranath}]{Laidler2007}
+Laidler, V.~G., Papovich, C., Grogin, N.~A., {et~al.} 2007, \pasp, 119, 1325
 
 \bibitem[{Lang(2014)}]{Lang2014e}
 Lang, D. 2014, \aj, 147, 108
+
+\bibitem[{Le~F{\`e}vre {et~al.}(2013)Le~F{\`e}vre, Cassata, Cucciati, Garilli,
+  Ilbert, Le~Brun, Maccagni, Moreau, Scodeggio, Tresse, Zamorani, Adami,
+  Arnouts, Bardelli, Bolzonella, Bondi, Bongiorno, Bottini, Cappi, Charlot,
+  Ciliegi, Contini, de~la Torre, Foucaud, Franzetti, Gavignaud, Guzzo, Iovino,
+  Lemaux, L{\'o}pez-Sanjuan, McCracken, Marano, Marinoni, Mazure, Mellier,
+  Merighi, Merluzzi, Paltani, Pell{\`o}, Pollo, Pozzetti, Scaramella, Tasca,
+  Vergani, Vettolani, Zanichelli, \& Zucca}]{LeFevre2013}
+Le~F{\`e}vre, O., Cassata, P., Cucciati, O., {et~al.} 2013, \aap, 559, A14
 
 \bibitem[{Lucy(1974)}]{Lucy1974}
 Lucy, L.~B. 1974, \aj, 79, 745
@@ -78,23 +133,50 @@ Lucy, L.~B. 1974, \aj, 79, 745
 Mainzer, A., Bauer, J., Cutri, R., {et~al.} 2014, in Lunar and Planetary
   Inst.~Technical Report, Vol.~45, Lunar and Planetary Science Conference, 2724
 
-\bibitem[{Merlin {et~al.}(2016)Merlin, Bourne, Castellano, Ferguson, Wang,
-  Derriere, Dunlop, Elbaz, \& Fontana}]{Merlin2016a}
-Merlin, E., Bourne, N., Castellano, M., {et~al.} 2016, Astronomy and
-  Astrophysics, 595, A97
+\bibitem[{Merlin {et~al.}(2015)Merlin, Fontana, Ferguson, Dunlop, Elbaz,
+  Bourne, Bruce, Buitrago, Castellano, Schreiber, Grazian, McLure, Okumura,
+  Shu, Wang, Amor{\'{\i}}n, Boutsia, Cappelluti, Comastri, Derriere, Faber, \&
+  Santini}]{Merlin2015}
+Merlin, E., Fontana, A., Ferguson, H.~C., {et~al.} 2015, Astronomy and
+  Astrophysics, 582, A15
 
 \bibitem[{Mink(1998)}]{Mink1998b}
 Mink, D.~J. 1998, in Bulletin of the American Astronomical Society, Vol.~30,
   AAS/Division of Dynamical Astronomy Meeting, 1144
 
+\bibitem[{Newman {et~al.}(2013)Newman, Cooper, Davis, Faber, Coil,
+  Guhathakurta, Koo, Phillips, Conroy, Dutton, Finkbeiner, Gerke, Rosario,
+  Weiner, Willmer, Yan, Harker, Kassin, Konidaris, Lai, Madgwick, Noeske,
+  Wirth, Connolly, Kaiser, Kirby, Lemaux, Lin, Lotz, Luppino, Marinoni,
+  Matthews, Metevier, \& Schiavon}]{Newman2013}
+Newman, J.~A., Cooper, M.~C., Davis, M., {et~al.} 2013, \apjs, 208, 5
+
+\bibitem[{Parkinson {et~al.}(2012)Parkinson, Riemer-S{\o}rensen, Blake, Poole,
+  Davis, Brough, Colless, Contreras, Couch, Croom, Croton, Drinkwater, Forster,
+  Gilbank, Gladders, Glazebrook, Jelliffe, Jurek, Li, Madore, Martin, Pimbblet,
+  Pracy, Sharp, Wisnioski, Woods, Wyder, \& Yee}]{Parkinson2012a}
+Parkinson, D., Riemer-S{\o}rensen, S., Blake, C., {et~al.} 2012, \prd, 86,
+  103518
+
 \bibitem[{Richardson(1972)}]{Richardson1972}
 Richardson, W.~H. 1972, Journal of the Optical Society of America (1917-1983),
   62, 55
 
-\bibitem[{Stern {et~al.}(2012)Stern, Assef, Benford, Blain, Cutri, Dey,
-  Eisenhardt, Griffith, Jarrett, Lake, Masci, Petty, Stanford, Tsai, Wright,
-  Yan, Harrison, \& Madsen}]{Stern2012}
-Stern, D., Assef, R.~J., Benford, D.~J., {et~al.} 2012, \apj, 753, 30
+\bibitem[{Scodeggio {et~al.}(2018)Scodeggio, Guzzo, Garilli, Granett,
+  Bolzonella, de~la Torre, Abbas, Adami, Arnouts, Bottini, Cappi, Coupon,
+  Cucciati, Davidzon, Franzetti, Fritz, Iovino, Krywult, Le~Brun, Le~F{\`e}vre,
+  Maccagni, Ma{\l}ek, Marchetti, Marulli, Polletta, Pollo, Tasca, Tojeiro,
+  Vergani, Zanichelli, Bel, Branchini, De~Lucia, Ilbert, McCracken, Moutard,
+  Peacock, Zamorani, Burden, Fumana, Jullo, Marinoni, Mellier, Moscardini, \&
+  Percival}]{Scodeggio2018}
+Scodeggio, M., Guzzo, L., Garilli, B., {et~al.} 2018, \aap, 609, A84
+
+\bibitem[{Strauss {et~al.}(2002)Strauss, Weinberg, Lupton, Narayanan, Annis,
+  Bernardi, Blanton, Burles, Connolly, Dalcanton, Doi, Eisenstein, Frieman,
+  Fukugita, Gunn, Ivezi{\'c}, Kent, Kim, Knapp, Kron, Munn, Newberg, Nichol,
+  Okamura, Quinn, Richmond, Schlegel, Shimasaku, SubbaRao, Szalay, Vanden~Berk,
+  Vogeley, Yanny, Yasuda, York, \& Zehavi}]{Strauss2002}
+Strauss, M.~A., Weinberg, D.~H., Lupton, R.~H., {et~al.} 2002, \aj, 124, 1810
 
 \bibitem[{Wright {et~al.}(2010)Wright, Eisenhardt, Mainzer, Ressler, Cutri,
   Jarrett, Kirkpatrick, Padgett, McMillan, Skrutskie, Stanford, Cohen, Walker,

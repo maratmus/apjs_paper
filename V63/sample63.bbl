@@ -1,0 +1,66 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\href{#1}{#1}}
+\providecommand{\dodoi}[1]{doi:~\href{http://doi.org/#1}{\nolinkurl{#1}}}
+\providecommand{\doeprint}[1]{\href{http://ascl.net/#1}{\nolinkurl{http://ascl.net/#1}}}
+\providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
+
+\bibitem[{{Astropy Collaboration} {et~al.}(2013){Astropy Collaboration},
+  {Robitaille}, {Tollerud}, {Greenfield}, {Droettboom}, {Bray}, {Aldcroft},
+  {Davis}, {Ginsburg}, {Price-Whelan}, {Kerzendorf}, {Conley}, {Crighton},
+  {Barbary}, {Muna}, {Ferguson}, {Grollier}, {Parikh}, {Nair}, {Unther},
+  {Deil}, {Woillez}, {Conseil}, {Kramer}, {Turner}, {Singer}, {Fox}, {Weaver},
+  {Zabalza}, {Edwards}, {Azalee Bostroem}, {Burke}, {Casey}, {Crawford},
+  {Dencheva}, {Ely}, {Jenness}, {Labrie}, {Lim}, {Pierfederici}, {Pontzen},
+  {Ptak}, {Refsdal}, {Servillat}, \& {Streicher}}]{2013A&A...558A..33A}
+{Astropy Collaboration}, {Robitaille}, T.~P., {Tollerud}, E.~J., {et~al.} 2013,
+  \aap, 558, A33, \dodoi{10.1051/0004-6361/201322068}
+
+\bibitem[{{Bertin} \& {Arnouts}(1996)}]{1996A&AS..117..393B}
+{Bertin}, E., \& {Arnouts}, S. 1996, \aaps, 117, 393,
+  \dodoi{10.1051/aas:1996164}
+
+\bibitem[{{Cloutier} {et~al.}(2018){Cloutier}, {Doyon}, {Bouchy}, \&
+  {H{\'e}brard}}]{2018AJ....156...82C}
+{Cloutier}, R., {Doyon}, R., {Bouchy}, F., \& {H{\'e}brard}, G. 2018, \aj, 156,
+  82, \dodoi{10.3847/1538-3881/aacea9}
+
+\bibitem[{{Corrales}(2015)}]{2015ApJ...805...23C}
+{Corrales}, L. 2015, \apj, 805, 23, \dodoi{10.1088/0004-637X/805/1/23}
+
+\bibitem[{{Ferland} {et~al.}(2013){Ferland}, {Porter}, {van Hoof}, {Williams},
+  {Abel}, {Lykins}, {Shaw}, {Henney}, \& {Stancil}}]{2013RMxAA..49..137F}
+{Ferland}, G.~J., {Porter}, R.~L., {van Hoof}, P.~A.~M., {et~al.} 2013, \rmxaa,
+  49, 137.
+\newblock \doarXiv{1302.4485}
+
+\bibitem[{{Hanisch} \& {Biemesderfer}(1989)}]{1989BAAS...21..780H}
+{Hanisch}, R.~J., \& {Biemesderfer}, C.~D. 1989, in \baas, 780
+
+\bibitem[{{Lamport}(1994)}]{lamport94}
+{Lamport}, L. 1994, {LaTeX: A Document Preparation System}, 2nd edn.
+  (Addison-Wesley Professional)
+
+\bibitem[{{Li} {et~al.}(2018){Li}, {Zhang}, {Peter}, {Chitta}, {Su}, {Song},
+  {Xia}, \& {Hou}}]{2018ApJ...868L..33L}
+{Li}, L., {Zhang}, J., {Peter}, H., {et~al.} 2018, \apj, 868, L33,
+  \dodoi{10.3847/2041-8213/aaf167}
+
+\bibitem[{{Pr{\v{s}}a} {et~al.}(2016){Pr{\v{s}}a}, {Harmanec}, {Torres},
+  {Mamajek}, {Asplund}, {Capitaine}, {Christensen-Dalsgaard}, {Depagne},
+  {Haberreiter}, \& {Hekker}}]{2016AJ....152...41P}
+{Pr{\v{s}}a}, A., {Harmanec}, P., {Torres}, G., {et~al.} 2016, \aj, 152, 41,
+  \dodoi{10.3847/0004-6256/152/2/41}
+
+\bibitem[{{Schwarz} {et~al.}(2011){Schwarz}, {Ness}, {Osborne}, {Page},
+  {Evans}, {Beardmore}, {Walter}, {Helton}, {Woodward}, {Bode}, {Starrfield},
+  \& {Drake}}]{2011ApJS..197...31S}
+{Schwarz}, G.~J., {Ness}, J.-U., {Osborne}, J.~P., {et~al.} 2011, \apjs, 197,
+  31, \dodoi{10.1088/0067-0049/197/2/31}
+
+\bibitem[{{Vogt} {et~al.}(2014){Vogt}, {Dopita}, {Kewley}, {Sutherland},
+  {Scharw{\"a}chter}, {Basurah}, {Ali}, \& {Amer}}]{2014ApJ...793..127V}
+{Vogt}, F. P.~A., {Dopita}, M.~A., {Kewley}, L.~J., {et~al.} 2014, \apj, 793,
+  127, \dodoi{10.1088/0004-637X/793/2/127}
+
+\end{thebibliography}

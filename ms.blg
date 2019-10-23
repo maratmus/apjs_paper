@@ -4,47 +4,52 @@ The top-level auxiliary file: ms.aux
 The style file: apj.bst
 Database file #1: msNotes.bib
 Database file #2: ms.bib
+Warning--I didn't find a database entry for "Coleman1980"
+Warning--I didn't find a database entry for "Kinney1996"
+Warning--I didn't find a database entry for "Beck2016"
+Warning--I didn't find a database entry for "Reis2012"
+Warning--I didn't find a database entry for "Gao2018"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty institution in 2013wise.rept....1C
-You've used 20 entries,
+You've used 30 entries,
             3085 wiz_defined-function locations,
-            800 strings with 12520 characters,
-and the built_in function-call counts, 12297 in all, are:
-= -- 758
-> -- 1341
+            902 strings with 21522 characters,
+and the built_in function-call counts, 22051 in all, are:
+= -- 1161
+> -- 2780
 < -- 10
-+ -- 454
-- -- 461
-* -- 1245
-:= -- 2449
-add.period$ -- 20
-call.type$ -- 20
-change.case$ -- 117
-chr.to.int$ -- 20
-cite$ -- 21
-duplicate$ -- 402
-empty$ -- 577
-format.name$ -- 486
-if$ -- 2309
++ -- 944
+- -- 956
+* -- 2427
+:= -- 4478
+add.period$ -- 30
+call.type$ -- 30
+change.case$ -- 164
+chr.to.int$ -- 30
+cite$ -- 31
+duplicate$ -- 603
+empty$ -- 884
+format.name$ -- 988
+if$ -- 4050
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 14
-newline$ -- 64
-num.names$ -- 81
-pop$ -- 129
+missing$ -- 25
+newline$ -- 94
+num.names$ -- 122
+pop$ -- 185
 preamble$ -- 1
-purify$ -- 116
+purify$ -- 163
 quote$ -- 0
-skip$ -- 332
+skip$ -- 510
 stack$ -- 0
-substring$ -- 384
-swap$ -- 28
-text.length$ -- 3
+substring$ -- 668
+swap$ -- 38
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 180
+type$ -- 270
 warning$ -- 1
-while$ -- 68
+while$ -- 100
 width$ -- 0
-write$ -- 205
-(There was 1 warning)
+write$ -- 303
+(There were 6 warnings)
